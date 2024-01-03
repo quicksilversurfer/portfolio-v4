@@ -62,10 +62,18 @@
 .pts-react {
   width: 100%;
   height: 100%;
+  overflow: auto;
 }
 
 /* Override canvas styles to fill the parent */
 .pts-react-canvas {
   width: 100% !important;
   height: 100% !important;
+  overflow: auto !important;
+}
+
+@media (max-width: 640px) {
+  .pts-react-canvas {
+    display: none !important;
+  }
 }
