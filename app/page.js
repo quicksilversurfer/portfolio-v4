@@ -41,13 +41,13 @@ export default function Home() {
         <div className="sm:grid grid-cols-2 gap-6">
           <ProjectCard
             title="Shui"
-            description="End to end design execution for a complex medical device"
+            description="developing design systems for user interface consistency and increased internal productivity"
             image={shuiCover}
             link="/shui"
           />
           <ProjectCard
             title="Vaccellent"
-            description="End to end design execution for a complex medical device"
+            description="tools to manage, and coordinate the distribution and utilization of COVID-19 vaccines"
             image={vaccellentCover}
             link="/vaccellent"
           />
