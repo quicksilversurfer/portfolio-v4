@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hello World
 
-## Getting Started
+Thank you for stopping by.
 
-First, run the development server:
+I'm Prateek, an Interaction Designer at AWS. I am part of Databases group where I work on designing modern, easy-to-use, easy-to-learn management consoles for various database offerings.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Previously at Siemens Healthineers, I've worked on the design of medical devices and interfaces to improve the user experience and user workflow for healthcare professionals in order to support better outcomes for patients and improve operator efficiency.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I also had the opportunity to work on the redesign of a M1 market radiology device, and also worked on creating a UI design system that spans across the entire Siemens Healthineers product portfolio.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can find my work experience and education journey below. I'd love to hear from you and you can reach out to me at - hello@prateeksolanki.com.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Cheers!
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## CV
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Work
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**AWS**, Sr. UX Designer [Jun' 22 - Current]
 
-## Deploy on Vercel
+- Working within the Databases group to help design and build the management consoles for databases services that AWS offers.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Siemens Healthcare**, Sr. UX Designer [Nov' 16 - Jun' 22]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Design and development of Siemens Healthineers User Interface (Shui) design system, which is being rolled out to all flagship products. Shui won the Red Dot Communication Award in 2018.
+- Created a simple yet effective system that spans a multitude of medical devices, and enabled harmonization of common workflows across product lines, through close collaboration with product design teams.
+- Developed insights and solutions for several strategic initiatives and projects – UX framework for AI, Vaccellent - digitalization of the vaccination supply chain. Demonstrated strong product, visual design sensibilities, and supported cross-functional teams by creating concepts, customer journeys and prototypes.
+- Planned and executed end-to-end design process for redesign of a Cardiology Ultrasound system. Contributed to the hardware and software design of the Acuson Sequoia Ultrasound platform.
+- Conducted user research internationally, presenting results to product management which informed a late-stage product development pivot.
+- Worked closely with engineering, clinical and product management teams to define product design strategy and concepts and supported teams from concept definition to implementation and release.
+
+**Siemens Healthcare**, Interaction Design Intern [Feb' 16 - Jul' 16]
+
+- Built hardware and software prototypes to evaluate early concepts for Acuson Sequoia.
+- Synthesized research to help define a high level interaction design framework for Acuson Sequoia.
+- Supported the design team with defining information architecture, wireframing, and UI concepts for Patient Management workflow in Ultrasound systems.
+
+**Concept Nation**, Freelance [Sep' 15 - Jan' 15]
+
+- UI design and front-end development for a community-oriented fashion e-commerce platform.
+- Established overall visual language, created UI concepts and delivered front-end templates developed using the Bootstrap framework.
+
+**Fractal Ink Design Studio**, Front End Engineer [Feb' 13 - Jul' 13]
+
+- Front-end development for [eezyrent](https://www.eezyrent.com/), a social real-estate platform, and parts of other web-based products and services designed at Fractal Ink.
+- Worked closely with clients, and UI designers to develop pixel perfect front-end implementations.
+
+### Education
+
+**Domus Academy**, M.A. in Interaction Design [Jul' 14]
+
+**Manipal Institute of Technology**, B.E. in Mechatronics [Jul' 10]
+
+### Skills
+
+Interaction Design, Visual Design, UI Design, UX Design, User Research, Usability Testing, Medical Device Design, Rapid Prototyping, HTML5, CSS3, JavaScript, Web Components, Polymer, React, Gatsby.js, Front-End Development.
+
+### Contact
+
+Email: hello@prateeksolanki.com
+
+Portfolio: [Prateek Solanki](http://prateeksolanki.com/)
+
+---
