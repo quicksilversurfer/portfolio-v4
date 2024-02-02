@@ -178,19 +178,6 @@ export default function Shui() {
             complex devices, it reduces training time, improves learnability and
             addresses the staff shortages rising across the healthcare industry.
           </p>
-
-          <h4 className="uppercase text-sm pt-4">business justification</h4>
-          <p>
-            Building and maintaining a design system is an ongoing investment.
-            Often times it's hard for executives to understand the value behind
-            such an effort, especially when things are working well.
-          </p>
-          <p>
-            I've helped the team develop a metric around cost-avoidance,
-            essentially money saved by a team when they use Shui to build their
-            product. This metric has become the de-facto method to justify
-            continued investment in Shui at the executive level.
-          </p>
         </Block>
       </Section>
       <Section header="other projects">

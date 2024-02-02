@@ -100,13 +100,15 @@ export default function Colophon() {
               rel="noopener noreferrer"
               className="link-style"
             >
-              Literata
+              Crimson Pro
             </a>
             : open source serif developed by{" "}
-            <a href="https://www.type-together.com/" className="link-style">
-              TypeTogether
-            </a>{" "}
-            foundry.
+            <a
+              href="https://fonts.google.com/?query=Jacques%20Le%20Bailly"
+              className="link-style"
+            >
+              Jacques Le Bailly.
+            </a>
           </p>
           <p>
             <a

@@ -29,12 +29,12 @@ export default function Footer() {
         <li className="hidden sm:mr-2 sm:block">—</li>
         <li>
           <a
-            href="https://refind.com/quicksilvrsrfr"
+            href="https://github.com/quicksilversurfer"
             target="_blank"
             rel="noopener noreferrer"
             className="link-style"
           >
-            refind
+            github
           </a>
         </li>
       </ul>
