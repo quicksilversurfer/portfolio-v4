@@ -72,7 +72,7 @@
   overflow: auto !important;
 }
 
-@media (max-width: 640px) {
+@media (pointer: coarse) and (hover: none) and (max-width: 640px) {
   .pts-react-canvas {
     display: none !important;
   }

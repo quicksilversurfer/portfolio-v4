@@ -97,10 +97,10 @@ export default function Home() {
               To me, design is far more than aesthetics or utility; it's a deep
               understanding of a domain and its community. It's about creating
               products and experiences that resonate with people, ensuring they
-              hold a meaningful place in the lives of users. It's about evolving
-              this relationship of interaction and experience over time, and
-              crafting solutions that are not only functional but also
-              emotionally resonant and visually compelling.
+              hold a meaningful place in their lives. It's about evolving this
+              relationship of interaction and experience over time, and crafting
+              solutions that are not only functional but also emotionally
+              resonant and visually compelling.
             </p>
             <p className="mb-4">
               Design is the medium through which I express the change I want to

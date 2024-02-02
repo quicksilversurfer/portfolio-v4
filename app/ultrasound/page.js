@@ -9,16 +9,12 @@ import ProjectCard from "@/components/ProjectCard";
 // images
 import sequoiaImg from "@/public/images/ultrasound/sequoia.png";
 import easiestImg from "@/public/images/ultrasound/easiest.png";
-// import keyImg from "@/public/images/ultrasound/key_difference.png";
 import leaderImg from "@/public/images/ultrasound/leader.png";
 import learningImg from "@/public/images/ultrasound/learning_curve.png";
 import preferenceImg from "@/public/images/ultrasound/preference.png";
-import studyImg from "@/public/images/ultrasound/study_design.png";
 import successImg from "@/public/images/ultrasound/success.png";
 import sc2000Img from "@/public/images/ultrasound/acuson_sc2000.jpg";
 import originImg from "@/public/images/ultrasound/acuson_origin.png";
-// import ultrasoundImg from "@/public/images/ultrasound/ultrasound.png";
-// import usabilityImg from "@/public/images/ultrasound/usability.png";
 import shuiCover from "@/public/images/shui/shui_cover.jpeg";
 import vaccellentCover from "@/public/images/tva/vaccellent_cover.jpg";
 
