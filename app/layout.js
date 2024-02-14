@@ -15,18 +15,18 @@ export const metadata = {
   description:
     "Interaction design portfolio of Prateek Solanki, Sr. UX Designer at AWS.",
   keywords:
-    "Prateek Solanki, Interaction Designer, Portfolio, Product Designer, UX Designer, Healthcare design, Siemens Healthineers, AWS, UI/UX, Portfolio, Design Projects, Databases",
-  image: "/path-to-your-image.jpg", // A URL to an image that represents your page
+    "Prateek Solanki, Interaction Designer, Portfolio, Product Designer, UX Designer, Healthcare design, Siemens Healthineers, AWS, UI/UX, Design Projects, Databases",
+  image: "/path-to-your-image.jpg",
   og: {
     title: "Prateek Solanki | Interaction Designer",
     description:
       "Interaction design portfolio of Prateek Solanki, Sr. UX Designer at AWS.",
-    image: "/path-to-your-og-image.jpg", // Open Graph image URL
+    image: "/opengraph_image.png",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    image: "/path-to-your-twitter-image.jpg", // Twitter card image URL
+    image: "/opengraph_image.png",
     creator: "@quicksilvrsrfr", // Your Twitter handle, if applicable
   },
   canonical: "https://prateeksolanki.com", // Your portfolio URL
