@@ -131,12 +131,12 @@ export default function Ultrasound() {
             </a>
             , managing timelines, budgeting, research, iterative workflow
             improvements, design documentation, and user evaluations with over
-            60+ global participants
+            60+ global participants.
           </p>
           <p>
-            My leadership of these highly complex projects exemplified strategic
+            My ownership of these highly complex projects exemplified strategic
             planning, stakeholder collaboration, user empathy, data-driven
-            decisions, and unwavering commitment to user-centered design.
+            decisions, and a commitment to user-centered design.
           </p>
           <Media
             src={originImg}
@@ -148,13 +148,13 @@ export default function Ultrasound() {
         <Block title="role">
           <p>
             My contributions were part of a team of four UX designers leading
-            the charge in user experience and interaction design, working in
-            synergy with Human Factors, Project Management, Clinical, and
+            the the user experience and interaction design, working in
+            collaboration with Human Factors, Project Management, Clinical, and
             Engineering departments within the Ultrasound division.
           </p>
           <p>
             Our team, which operated as in-house consultants, worked on
-            high-impact projects —such as comprehensive redesigns or
+            high-impact projects — such as comprehensive redesigns or
             strategically critical endeavors. Based in Princeton, we maintained
             a close partnership with the Seattle-based Ultrasound team, with
             regular travel for crucial meetings and user evaluations.
@@ -216,10 +216,10 @@ export default function Ultrasound() {
             >
               S3000 HELX
             </a>{" "}
-            to the Sequoia platform, where the aim was clear: to equal or
+            to the Sequoia platform, where the aim was clear: to match or
             surpass the workflow of competitors and significantly enhance the
             system's walk-up usability. The goal was to deliver an ultrasound
-            interface that could be swiftly and efficiently mastered by any
+            interface that could be easily and efficiently mastered by any
             practitioner, whether in a stable staff position or stepping in as a
             freelancer.
           </p>
@@ -229,23 +229,23 @@ export default function Ultrasound() {
             Sequoia platform. The goal was to leapfrog the HELX platform and
             deliver an advanced, intuitive system that conformed with the
             overarching vision for user-friendliness, seamless workflow
-            integration and improving walk-up usability.
+            integration and improved walk-up usability.
           </p>
         </Block>
         <Blockquote>
-          The goal was to deliver an ultrasound interface that could be swiftly
+          The goal was to deliver an ultrasound interface that could be easily
           and efficiently mastered by any practitioner, whether in a stable
           staff position or stepping in as a freelancer.
         </Blockquote>
         <Block title="sequoia foundations">
           <p>
-            During my internship at Siemens Healthineers, I contributed to the
-            early-stage research for the Sequoia ultrasound platform, evaluating
-            design possibilities ranging from incremental changes to disruptive
-            innovations. Our goal was enhancing walk-up usability through
-            reduced control panel keys and exploring alternative input devices
-            to improve cleanliness and differentiation—critical in sterile
-            environments.
+            I was first introduced to this project during my internship at
+            Siemens Healthineers. I contributed to the early-stage research for
+            the Sequoia ultrasound platform, evaluating design possibilities
+            ranging from incremental changes to disruptive innovations. Our goal
+            was enhancing walk-up usability through reduced control panel keys
+            and exploring alternative input devices to improve cleanliness and
+            differentiation—critical in sterile environments.
           </p>
           <h4 className="uppercase text-sm pt-4">prototype development</h4>
           <p>
@@ -259,28 +259,29 @@ export default function Ultrasound() {
           </p>
           <h4 className="uppercase text-sm pt-4">information architecture</h4>
           <p>
-            A pivotal challenge was presenting the complex information
+            Another key challenge was presenting the complex information
             architecture intuitively across modes. My analysis categorizing
-            controls by type and availability was key to mapping them within the
-            interaction framework. Engaging users and experts provided insights
-            into mental models for an intuitive hierarchy.
+            controls by type and availability was a valuable contribution that
+            helped in mapping controls within the interaction framework. We also
+            engaged with users and experts who provided insights into mental
+            models that helped develop an intuitive information architecture.
           </p>
           <p>
-            Balancing innovation and utility was crucial. These early user
-            interface and input device decisions shaped ongoing Sequoia
-            development, underscoring the importance of aligning bold vision
-            with practical validation.
+            These early user interface and input device decisions shaped ongoing
+            Sequoia development, underscoring the importance of aligning bold
+            vision with practical validation.
           </p>
         </Block>
         <Block title="cardiology platform redesign">
           <p>
-            I had the privilege to lead the significant update to the Cardiology
-            device within the Sequoia platform development. Tasked with a
-            complex multi-year redesign, I planned strategies for transitioning
-            primarily hardware controlled system into a modern, partially
-            digital interface for this highly complex medical device. The
-            redesign required aligning with the Sequoia platform while uniquely
-            tailoring it for specialized cardiology needs.{" "}
+            As the Sequoia project progressed, I got to lead the significant
+            update to the Cardiology device as part of Sequoia platform
+            development. Tasked with a complex multi-year redesign, I planned
+            timelines for transitioning primarily hardware controlled system
+            into a modern, partially digital interface for this highly complex
+            medical device. The redesign required aligning with the Sequoia
+            platform while uniquely tailoring it for specialized cardiology
+            needs.{" "}
           </p>
           <Media
             src={sc2000Img}
@@ -291,24 +292,24 @@ export default function Ultrasound() {
           <p>
             Using an iterative approach, we simultaneously engaged in discovery
             and definition conducting extensive research for Cardiology and
-            swiftly adapting concepts based on insights from the Sequoia’s
-            advancement that was being done parallely.
+            adapting concepts based on insights from the Sequoia’s development
+            that was being done parallely.
           </p>
           <p>
-            Our approach consolidated existing cardiologic features into a more
-            intuitive interface, leveraging Sequoia’s work to enhance and
-            customize. Conducting this project in parallel allowed each one to
-            inform the other through shared learnings and cross-pollination,
-            maximizing efficiency and innovation.
+            Our approach consolidated existing cardiology-specific features into
+            a more intuitive interface, leveraging Sequoia’s work. Executing
+            this project in parallel allowed each team to inform the other
+            through shared learnings and cross-pollination, maximizing
+            efficiency and innovation.
           </p>
           <p>
-            The planning and execution, while tremendously challenging,
-            exemplified the power of adaptive planning, collaboration across
-            functions, and unwavering commitment to user-centric design.
+            The planning and execution, while challenging, showcased the power
+            of adaptive planning, collaboration across functions, and unwavering
+            commitment to user-centric design.
           </p>
           <h4 className="uppercase text-sm pt-4">control panel design</h4>
           <p>
-            I leveraged vast existing research and conversations across teams to
+            I leveraged existing research and conversations across teams to
             glean pivotal insights for our first cardiology imaging interface
             iteration. A competitive analysis, heuristic evaluation, and global
             contextual inquiries gave a well-rounded view of expectations and
@@ -324,16 +325,16 @@ export default function Ultrasound() {
           <p>
             Our preliminary research indicated the need for further research
             into an innovative direction the Sequoia platform had taken for the
-            main input device. I used scholarly research to identify an
-            evaluation method based on Fitts's law, enabling objective
-            performance data collection.
+            main input device. I used research to identify an evaluation method
+            based on Fitts's law, enabling objective performance data
+            collection.
           </p>
           <p>
             During our global user evaluations that encompassed a spectrum of
-            users, we were able to contrast individuals’ performance and
+            users, we were able to contrast an individuals’ performance and
             impressions while using this input device. Results showed slower
-            response times and higher errors with the new device, especially for
-            precision tasks critical in cardiology.
+            response times and higher errors with the new device, that are
+            especially relevant for precision tasks critical in cardiology.
           </p>
           <p>
             These insights sparked intense debate but led us to recommend
@@ -341,7 +342,7 @@ export default function Ultrasound() {
             traditional one, mitigating usability risks. Grounded in data, we
             advocated for addressing limitations before adoption to senior
             leadership. After a long round of discussions, our recommendation
-            was accepted and the input device was redesigned.
+            was accepted and the input device was reconsidered for both devices.
           </p>
           <p>
             Armed with evaluation findings, we finalized an optimal control
@@ -357,11 +358,11 @@ export default function Ultrasound() {
             improving learnability and usability.
           </p>
           <p>
-            We dissected features systematically via targeted design sprints,
-            carefully considering each element’s redesign extent while balancing
-            importance and engineering bandwidth. Cross-functional collaboration
-            played a crucial role, and we worked closely with the Ultrasound
-            team to scope features, and changes carefully.
+            We dived deep into features systematically via targeted design
+            sprints, carefully considering each element’s redesign extent while
+            balancing importance and engineering bandwidth. Cross-functional
+            collaboration played a crucial role, and we worked closely with the
+            Ultrasound team to scope features, and changes carefully.
           </p>
           <p>
             Solid documentation structures became essential to convey intent
@@ -373,7 +374,7 @@ export default function Ultrasound() {
           <p>
             Formative evaluations with prototypes validated directions and
             allowed symbiotic insight exchange with the Sequoia team to improve
-            the overall platform.
+            the overall platform for both General Imaging, and Cardiology.
           </p>
         </Block>
         <Block title="outcomes">

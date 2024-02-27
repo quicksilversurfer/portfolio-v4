@@ -1,4 +1,5 @@
-import { Inter } from "next/font/google";
+import PlausibleProvider from "next-plausible";
+
 import localfont from "next/font/local";
 import clsx from "clsx";
 import "./globals.css";
@@ -6,8 +7,6 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Header from "../components/Header";
 import Section from "../components/Section";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL("https://prateeksolanki.com"),
@@ -47,6 +46,9 @@ const publicsans = localfont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <PlausibleProvider domain="prateeksolanki.com" />
+      </head>
       <body
         className={clsx(
           "h-full w-full antialiased bg-base-paper dark:bg-base-black",
