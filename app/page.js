@@ -10,6 +10,7 @@ import vaccellentCover from "@/public/images/tva/vaccellent_cover.jpg";
 import cscwCover from "@/public/images/personal/cscw.png";
 import d3Cover from "@/public/images/personal/d3people.png";
 import rssCover from "@/public/images/personal/rss-reader_cover.png";
+import hciCover from "@/public/images/hciindex/cover.png";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       />
       <Section
         header="work"
-        title="At AWS, I work across a number of database services supporting service teams with design, research and strategy."
+        title="At AWS, I help build tools that empower businesses to manage their data with ease and efficiency."
       >
         <ProjectCard
           title="AWS"
@@ -28,9 +29,9 @@ export default function Home() {
           image={awsCover}
           link="/aws"
         />
-        <h3 className="font-serif text-3xl sm:text-5xl font-light tracking-normal mb-12 leading-[1.150] text-pretty">
-          Previously at Siemens, I gained experience in end to end design
-          execution and project management for complex medical systems.
+        <h3 className="font-serif text-3xl sm:text-4xl font-light tracking-normal mb-12 sm:leading-[1.24] text-pretty">
+          At Siemens Healthineers, I led the design of human-centered medical
+          devices and helped build a comprehensive design system.
         </h3>
         <ProjectCard
           title="Ultrasound"
@@ -54,9 +55,15 @@ export default function Home() {
         </div>
       </Section>
       <Section
-        header="personal"
-        title="Outside of work, I enjoy exploring ideas that excite me, using skills I'd like to develop further."
+        header="personal projects"
+        title="I use personal projects as a playgorund to explore new ideas and technologies to continously expand my knowledge and skillset."
       >
+        <ProjectCard
+          title="HCI Index"
+          description="a nextjs app that uses ai to summarize and recommend a collection of hci papers"
+          image={hciCover}
+          link="https://hci-ai-index.vercel.app/"
+        />
         <div className="sm:grid grid-cols-3 gap-6">
           <ProjectCard
             title="cscw 2019"

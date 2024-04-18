@@ -29,10 +29,10 @@ export default function Cover({ heading, description }) {
             damping: 5,
           }}
           className={clsx(
-            " font-serif font-light text-4xl sm:text-8xl text-base-black dark:text-base-200 mb-12",
+            " font-serif font-light  text-base-black dark:text-base-200 mb-12",
             {
-              "mb-12": pathname === "/",
-              "mb-8": pathname !== "/",
+              "mb-12 text-7xl sm:text-8xl": pathname === "/",
+              "mb-8 text-6xl sm:text-8xl": pathname !== "/",
             }
           )}
         >
@@ -47,10 +47,10 @@ export default function Cover({ heading, description }) {
             damping: 5,
           }}
           className={clsx(
-            "font-serif font-thin text-base-600 dark:text-base-500 text-pretty",
+            "font-serif font-thin text-base-600 dark:text-base-500 text-balance",
             {
-              "text-3xl sm:text-7xl": pathname === "/",
-              "text-3xl sm:text-5xl mb-12": pathname !== "/",
+              "text-5xl sm:text-7xl leading-[1.1]": pathname === "/",
+              "text-4xl sm:text-5xl mb-12 leading-[1.2]": pathname !== "/",
             }
           )}
         >

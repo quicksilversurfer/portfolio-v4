@@ -1,6 +1,7 @@
 import PlausibleProvider from "next-plausible";
 
 import localfont from "next/font/local";
+import { EB_Garamond } from "next/font/google";
 import clsx from "clsx";
 import "./globals.css";
 
@@ -43,6 +44,19 @@ const publicsans = localfont({
   variable: "--font-public",
 });
 
+const sentient = localfont({
+  src: "../fonts/sentient-variable.woff2",
+  display: "swap",
+  variable: "--font-sentient",
+});
+
+const garamond = EB_Garamond({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-garamond",
+});
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -53,7 +67,9 @@ export default function RootLayout({ children }) {
         className={clsx(
           "h-full w-full antialiased bg-base-paper dark:bg-base-black",
           crimson.variable,
-          publicsans.variable
+          publicsans.variable,
+          garamond.variable,
+          sentient.variable
         )}
       >
         <Providers>

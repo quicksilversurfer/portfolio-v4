@@ -4,6 +4,7 @@ import Block from "@/components/Block";
 import Media from "@/components/Media";
 import Blockquote from "@/components/Blockquote";
 import { Tweet } from "react-tweet";
+import ImgContainer from "@/components/ImgContainer";
 
 //images
 import timeGroupwareImg from "@/public/images/blog/cscw/time_groupware_matrix.png";
@@ -85,11 +86,16 @@ export default function CscwBlog() {
             fundamental understanding of why things work the way they do.
           </p>
         </Block>
-        <Media
-          src={austinImg}
-          alt="An aerial photograph of Austin, Texas"
-          caption="Photo by Mitchell Kmetz on Unsplash"
-        />
+        <ImgContainer>
+          <div className="col-span-12">
+            <Media
+              src={austinImg}
+              alt="An aerial photograph of Austin, Texas"
+              caption="Photo by Mitchell Kmetz on Unsplash"
+            />
+          </div>
+        </ImgContainer>
+
         <Block title="a journey west">
           <p>
             Austin was hosting{" "}
@@ -108,7 +114,7 @@ export default function CscwBlog() {
               href="https://www.lri.fr/~mbl/ENS/CSCW/2013/papers/Ellis-CACM-91.pdf"
               className="link-style"
             >
-              seminal article
+              seminal article{" "}
             </a>
             on CSCW by Ellis et al., published in 1991, provides more background
             on the development of this field of study. The authors begin with a
@@ -135,11 +141,16 @@ export default function CscwBlog() {
             ‘Intelligent Agents’ among others.
           </p>
         </Block>
-        <Media
-          src={timeGroupwareImg}
-          alt="Time / Place Matrix for Groupware"
-          caption="Time / Place Matrix for Groupware"
-        />
+        <ImgContainer>
+          <div className="col-span-12">
+            <Media
+              src={timeGroupwareImg}
+              alt="Time / Place Matrix for Groupware"
+              caption="Time / Place Matrix for Groupware"
+            />
+          </div>
+        </ImgContainer>
+
         <Block>
           <p>
             In 2019, this and more has come true. With the internet, we are more
@@ -330,11 +341,16 @@ export default function CscwBlog() {
             push-button tools to intelligent silicon-based colleagues.
           </p>
         </Block>
-        <Media
-          src={herImg}
-          alt="An shot from the movie Her, showing the protagonist interacting with his AI assistant"
-          caption="Obligatory Her shoutout. Credit: Warner Brothers"
-        />
+        <ImgContainer>
+          <div className="col-span-12">
+            <Media
+              src={herImg}
+              alt="An shot from the movie Her, showing the protagonist interacting with his AI assistant"
+              caption="Obligatory Her shoutout. Credit: Warner Brothers"
+            />
+          </div>
+        </ImgContainer>
+
         <Block title="out of the bubble">
           <p>
             On the other side of AI and machine learning lie the humans and
@@ -406,17 +422,15 @@ export default function CscwBlog() {
           </p>
         </Block>
         <Blockquote>
-          <i>
-            “…When I operate, I don’t just operate with my eyes — you can also
-            hear tissue when it’s getting cut. I’ve been like, ‘did you HEAR
-            that?’ you know, when there’s something strange — so I think it
-            involves every sense you have. You know it’s the hearing of it, it’s
-            the touching of it — and it lets me know how easy a plane is going
-            to be dissected if I just touch it, and it peels away like butter,
-            or if it doesn’t move at all. There’s a lot to be gained that I feel
-            I need as a surgeon. I like to touch tissue. It’s something I
-            struggle with, with the da Vinci.”
-          </i>
+          “…When I operate, I don’t just operate with my eyes — you can also
+          hear tissue when it’s getting cut. I’ve been like, ‘did you HEAR
+          that?’ you know, when there’s something strange — so I think it
+          involves every sense you have. You know it’s the hearing of it, it’s
+          the touching of it — and it lets me know how easy a plane is going to
+          be dissected if I just touch it, and it peels away like butter, or if
+          it doesn’t move at all. There’s a lot to be gained that I feel I need
+          as a surgeon. I like to touch tissue. It’s something I struggle with,
+          with the da Vinci.”
         </Blockquote>
         <Block>
           <p>

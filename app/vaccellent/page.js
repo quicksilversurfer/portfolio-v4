@@ -5,6 +5,9 @@ import Block from "@/components/Block";
 import Media from "@/components/Media";
 import Blockquote from "@/components/Blockquote";
 import ProjectCard from "@/components/ProjectCard";
+import SectionHighlight from "@/components/SectionHighlight";
+import ImgContainer from "@/components/ImgContainer";
+import ProtectedContent from "@/components/ProtectedContent";
 
 //images
 import vaccelentOpsImg from "@/public/images/tva/vaccellent_operations.png";
@@ -35,155 +38,161 @@ export default function Vaccellent() {
         description="tools to manage, and coordinate the distribution and utilization of COVID-19 vaccines"
       />
       <Section projectInfo={vaccellentDetails}>
-        <Block title="background">
-          <p>
-            The COVID-19 pandemic placed enormous strain on countries around the
-            world, exposing long standing gaps in public health and exacerbating
-            chronic inequities.
-          </p>
-          <p>
-            One of these gaps and challenges is the inoculation of roughly 7.5
-            billion people with a limited number of vaccines. To address this
-            challenge, a small cross-functional team within Siemens Healthineers
-            set about to create a novel product to enable the digitalization of
-            the vaccine supply chain.
-          </p>
-          <p>
-            I supported the team with envisioning and crafting a clear product
-            definition, through journey maps and workshops. I helped make these
-            ideas tangible through mockups which drove decisions for the scope
-            and priority of features that needed to be built.
-          </p>
-          <p>
-            Within a short amount of time, we created a suite of tools for two
-            key customer types - Vaccellent Operations & Vaccellent Dashboard -
-            one supporting the utlization of vaccines at hospitals and clinics,
-            and the other supporting governing authorities to make data-driven
-            decisions about the distribution of vaccines.
-          </p>
-          <p>
-            Although well received in the limited release these products had,
-            the project has officially been shut down. Part of what we built
-            continues to live on and supports internal employee vaccination
-            registrations at Siemens Healthineers and other partner companies.
-          </p>
-        </Block>
-        <Media
-          src={vaccelentOpsImg}
-          alt="Vaccelent operations and mobile app"
-          caption=""
-        />
-        <Block title="value proposition">
-          <p>
-            The tools we developed addressed the following challenges for
-            customers -
-          </p>
-          <h4 className="uppercase text-sm pt-4">
-            managing vaccine distrubtion effectively
-          </h4>
-          <p>
-            Empowering public health authorities to make data-driven decisions
-            through adaptive AI-based analytics
-          </p>
-          <h4 className="uppercase text-sm pt-4">
-            operating vaccination procedures efficiently
-          </h4>
-          <p>
-            Streamlined patient scheduling and simplified vaccine inventory
-            management to optimize clinical workflow
-          </p>
-          <h4 className="uppercase text-sm pt-4">
-            coordinating doses, dates, patients and places
-          </h4>
-          <p>
-            Seamlessly bringing together real-time data related to vaccination
-            operations with high transparency
-          </p>
-        </Block>
-        <Block title="vaccellent operations">
-          <p>
-            Regional health facilities in several countries and regions are not
-            well-equipped to handle the scale of this vaccination effort. To
-            address this, we created a scheduling app for patients, and an
-            operations dashboard for healthcare facilities where they could
-            create vaccination time slots, view and record vaccinations, and
-            manage their inventory of vaccines.
-          </p>
-          <p>
-            We focused on creating simple and intuitive workflows with only the
-            most essential information. For the scheduling app, we developed a
-            step-by-step registration flow, focusing on accessibility and
-            relying on guerilla testing to validate our concepts.
-          </p>
-          <p>
-            For healthcare professionals and facilities, we developed a
-            dashboard which presented relevant and essential information
-            regarding vaccination appointments, and inventory levels.
-            Conversations with local healthcare partners and subject matter
-            experts were very helpful in navigating the dynamic nature of the
-            vaccination effort.
-          </p>
-        </Block>
-        <Media
-          src={vaccelentDashboardImg}
-          alt="Vaccellent dashboard user interface"
-          caption=""
-        />
-        <Block title="vaccellent dashboard">
-          <p>
-            Another novel aspect of Vaccellent was the capability to optimize
-            the distribution of vaccines based on data-driven modelling of
-            distribution scenarios. With the help of AI-based simulations, the
-            expected impact on cumulative infection rate could be modelled,
-            helping public health authorities make fast and confident decisions,
-            reducing deaths, and the spread of infections.
-          </p>
-          <p>
-            I worked closely with the product management, and engineering teams
-            to understand capabilities of the AI algorithms, and created
-            concepts for how these capabilities could be presented in simple and
-            intuitive workflows.
-          </p>
-        </Block>
-        <Block title="outlook">
-          <p>
-            Despite the project being challenging in many ways - constrained
-            timelines and resources, rapidly changing environment, lack of
-            contact with end-users - we were able to create a compelling value
-            proposition for Vaccellent.{" "}
-          </p>
-          <p>
-            Unfortunately because of the evolving operational and political
-            climate around vaccines, Vaccellent has been discontinued. But parts
-            of the system we developed are in use internally to support
-            vaccination efforts in Siemens Healthineers and other partner
-            companies. Other systems are being reshaped to broaden their area of
-            use and will likely find life in new settings.
-          </p>
-          <p>
-            In the limited time that Vaccellent was available, it received
-            favorable reviews. A partner working with early versions of the
-            Vaccellent system in the Vaccination Center at Erlangen, Germany had
-            the following to say -
-          </p>
-        </Block>
-        <Blockquote>
-          <p>
-            <i>
-              " Vaccellent is intuitive to use. I can immediately see what I’m
-              looking for. This saves time. I found that Vaccellent is easy to
-              handle for different users – everybody intuitively knew what to do
-              next without special training.
-            </i>
-          </p>
-          <p className="mt-4">
-            <i>
-              For me as an administrator also responsible for coordinating
-              fluctuating groups of staff, such as students, this saves a lot of
-              time. Well done!"
-            </i>
-          </p>
-        </Blockquote>
+        <SectionHighlight
+          kicker="Project Overview"
+          heading="Enabling Efficient COVID-19 Vaccine Distribution"
+          subHeading="My contributions to the Vaccellent project involved envisioning and designing a suite of digital tools to support efficient COVID-19 vaccine distribution and administration, including patient scheduling, inventory management, and data-driven decision-making for public health authorities."
+        >
+          <Block title="Role & contributions">
+            <p>
+              During the COVID-19 pandemic, the urgent need to vaccinate a
+              global population presented significant logistical challenges. To
+              address this, a small cross-functional team within Siemens
+              Healthineers embarked on developing Vaccellent, a novel product
+              aimed at digitalizing the vaccine supply chain.
+            </p>
+            <p>
+              I was one of two designers, alongside{" "}
+              <a
+                href="https://www.linkedin.com/in/joanna-pruchnicka-9b903173/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-style"
+              >
+                Joanna Pruchnicka
+              </a>{" "}
+              , supporting the team in envisioning and crafting a clear product
+              definition. Through journey maps and collaborative workshops, we
+              identified key user needs and pain points within the vaccine
+              distribution process. I then translated these insights into
+              tangible mockups and prototypes, which helped drive decisions
+              regarding feature prioritization and scope for the development
+              team.
+            </p>
+          </Block>
+          <Block title="Addressing Challenges in Vaccine Distribution">
+            <p>
+              Vaccellent addressed several critical challenges faced by
+              stakeholders involved in the vaccination effort:
+            </p>
+            <ul className="list-outside pl-4 space-y-4">
+              <li className="list-disc pl-2">
+                <b className="font-semibold">
+                  Managing Vaccine Distribution Effectively:
+                </b>{" "}
+                Empowering public health authorities to make data-driven
+                decisions through adaptive AI-based analytics, optimizing
+                vaccine allocation and distribution.
+              </li>
+              <li className="list-disc pl-2">
+                <b className="font-semibold">
+                  Operating Vaccination Procedures Efficiently:
+                </b>{" "}
+                Streamlining patient scheduling and simplifying vaccine
+                inventory management to optimize clinical workflows and reduce
+                administrative burden.
+              </li>
+              <li className="list-disc pl-2">
+                <b className="font-semibold">
+                  Coordinating Doses, Dates, Patients, and Places:
+                </b>{" "}
+                Seamlessly bringing together real-time data related to
+                vaccination operations with high transparency, ensuring
+                efficient coordination between various stakeholders.
+              </li>
+            </ul>
+          </Block>
+          <Block title="Vaccellent Operations">
+            <p>
+              Recognizing the strain on regional health facilities, we developed
+              Vaccellent Operations – a suite of tools including a patient
+              scheduling app and an operations dashboard for healthcare
+              providers.
+            </p>
+            <p>
+              The scheduling app offered a simple and intuitive step-by-step
+              registration flow, prioritizing accessibility and ease of use for
+              patients.
+            </p>
+            <p>
+              For healthcare facilities, the operations dashboard provided
+              essential information regarding vaccination appointments,
+              inventory levels, and patient records, allowing for efficient
+              management of vaccination procedures.
+            </p>
+          </Block>
+          <ImgContainer>
+            <div className="col-span-12">
+              <Media
+                src={vaccelentOpsImg}
+                alt="Vaccelent operations and mobile app"
+                caption=""
+              />
+            </div>
+          </ImgContainer>
+
+          <Block title="Vaccellent Dashboard: Data-Driven Decision Making">
+            <p>
+              A unique aspect of Vaccellent we were exploring was the ability to
+              optimize vaccine distribution using AI-based modeling and
+              simulations. This would provide public health authorities with
+              data-driven insights into the potential impact of different
+              distribution scenarios on infection rates and other key metrics,
+              enabling them to make informed decisions and allocate resources
+              effectively.
+            </p>
+            <p>
+              I worked closely with the product management and engineering teams
+              to translate the complex capabilities of the AI algorithms into
+              clear and intuitive visualizations and workflows within the
+              Vaccellent Dashboard.
+            </p>
+          </Block>
+          <ImgContainer>
+            <div className="col-span-12">
+              <Media
+                src={vaccelentDashboardImg}
+                alt="Vaccellent dashboard user interface"
+                caption=""
+              />
+            </div>
+          </ImgContainer>
+
+          <Block title="Project Outcome & Impact">
+            <p>
+              Despite facing challenges such as constrained timelines, limited
+              resources, and a rapidly evolving environment, the team
+              successfully developed a compelling solution with Vaccellent. In
+              the limited release of Vaccellent Operations, the product received
+              positive feedback from users, highlighting its intuitive design
+              and efficiency in managing vaccination processes.
+            </p>
+            <p>
+              Unfortunately because of the evolving operational and political
+              climate around vaccines, Vaccellent has been discontinued. But
+              parts of the system we developed continue to be in use internally
+              to support vaccination efforts in Siemens Healthineers and other
+              partner companies. Other systems are being reshaped to broaden
+              their area of use and will likely find life in new settings.
+            </p>
+            <p>
+              In the limited time that Vaccellent was available, it received
+              favorable reviews. A partner working with early versions of the
+              Vaccellent system in the Vaccination Center at Erlangen, Germany
+              had the following to say -
+            </p>
+          </Block>
+          <Blockquote>
+            "Vaccellent is intuitive to use. I can immediately see what I’m
+            looking for. This saves time. I found that Vaccellent is easy to
+            handle for different users – everybody intuitively knew what to do
+            next without special training."
+            <p className="text-lg font-sans mt-8">
+              Partner at the vaccination center in Erlangen, Germany
+            </p>
+          </Blockquote>
+        </SectionHighlight>
+        <ProtectedContent soon />
       </Section>
       <Section header="other projects">
         <div className="grid grid-cols-2 gap-6">
