@@ -49,7 +49,7 @@ export default function Cover({ heading, description }) {
           className={clsx(
             "font-serif font-thin text-4xl text-base-600 dark:text-base-500 text-balance",
             {
-              "sm:text-7xl leading-[1.1]": pathname === "/",
+              "sm:text-7xl sm:leading-[1.2]": pathname === "/",
               "sm:text-5xl mb-12 leading-[1.2]": pathname !== "/",
             }
           )}
