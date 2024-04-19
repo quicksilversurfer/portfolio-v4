@@ -87,32 +87,40 @@ export default function Home() {
       </Section>
       <Section
         header="about"
-        title="Design is a combination of understanding & expression. A synthesis of form and content to create meaning."
+        title="Design is a combination of understanding & expression. A synthesis of form, function and context to create meaning."
       >
         <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 sm:col-span-8 sm:col-start-5 font-sans mb-4 sm:mb-12">
-            <p className="mb-4">
+          <div className="col-span-12 sm:col-span-8 sm:col-start-5 font-sans mb-4 sm:mb-12 space-y-4">
+            <p>
               Born and brought up in India, I studied Mechatronics engineering
-              in school because I thought it would give me the broadest
+              in school because I believed it would give me the broadest
               introduction to how things are built. Joined an IT company to
-              learn how things are built on the Internet. Shifted to working at
+              learn how things are built on the internet. Shifted to working at
               the intersection of design and engineering, to explore what I felt
               passionate about. And finally went to school in Italy when I
               realized that design was my true calling.
             </p>
-            <p className="mb-4">
+            <p>
               To me, design is far more than aesthetics or utility; it's a deep
-              understanding of a domain and its community. It's about creating
-              products and experiences that resonate with people, ensuring they
-              hold a meaningful place in their lives. It's about evolving this
-              relationship of interaction and experience over time, and crafting
-              solutions that are not only functional but also emotionally
-              resonant and visually compelling.
+              understanding of a domain and its community. By immersing myself
+              in these complex environments, I aim to gain insights about
+              motives, goals, and context that shape acitivites in a domain.
+              This holistic understanding allows me to systematically design
+              solutions that integrate into people's lives addressing addressing
+              their needs, motivations, among other factors that influence their
+              interactions.
             </p>
-            <p className="mb-4">
-              Design is the medium through which I express the change I want to
-              see in the world, and work with people and teams attempting to do
-              the same.
+            <p>
+              With a diverse portfolio spanning multiple complex domains, I have
+              honed the ability to quickly learn about these environments,
+              distilling insights to enable cross-functional collaboration and
+              innovation. I bring a strategic, collaborative, critical thinking
+              approach and mindset to achieve team and business objectives by
+              creating solutions that resonate with people.
+            </p>
+            <p>
+              Design empowers me to express the change I want to see in the
+              world — and work with people and teams attempting to do the same.
             </p>
           </div>
         </div>

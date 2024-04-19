@@ -54,7 +54,7 @@ export default function ProtectedInput() {
               e.preventDefault();
               handleUnlock();
             }}
-            className="flex gap-4 sm:flex-row sm:gap-2 items-center justify-center w-10/12 sm:w-8/12"
+            className="flex gap-4 flex-col sm:flex-row sm:gap-2 sm:items-center justify-center w-full sm:w-8/12"
           >
             <label id="password" className="sr-only"></label>
             <input
@@ -63,11 +63,11 @@ export default function ProtectedInput() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter password"
-              className="block w-9/12 rounded-md border-0 py-1.5 text-base-900 dark:text-base-100 shadow-sm ring-1 ring-inset ring-base-300 dark:ring-base-800 placeholder:text-base-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-4"
+              className="block sm:w-9/12 rounded-md border-0 py-1.5 text-base-900 dark:text-base-100 shadow-sm ring-1 ring-inset ring-base-300 dark:ring-base-800 placeholder:text-base-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-4"
             />
             <button
               type="submit"
-              className="flex justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-3/12 bg-base-black  dark:bg-base-50 text-base-50 dark:text-base-900"
+              className="flex justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-normal sm:font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-3/12 bg-base-black  dark:bg-base-50 text-base-50 dark:text-base-900"
             >
               Unlock
             </button>
