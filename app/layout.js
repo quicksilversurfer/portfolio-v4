@@ -16,20 +16,11 @@ export const metadata = {
     "Interaction design portfolio of Prateek Solanki, Sr. UX Designer at AWS.",
   keywords:
     "Prateek Solanki, Interaction Designer, Portfolio, Product Designer, UX Designer, Healthcare design, Siemens Healthineers, AWS, UI/UX, Design Projects, Databases",
-  image: "/path-to-your-image.jpg",
-  og: {
-    title: "Prateek Solanki | Interaction Designer",
-    description:
-      "Interaction design portfolio of Prateek Solanki, Sr. UX Designer at AWS.",
-    image: "/opengraph_image.png",
-    type: "website",
+  referrer: "origin-when-cross-origin",
+  openGraph: {
+    images: "/opengraph-image.png",
   },
-  twitter: {
-    card: "summary_large_image",
-    image: "/opengraph_image.png",
-    creator: "@quicksilvrsrfr", // Your Twitter handle, if applicable
-  },
-  canonical: "https://prateeksolanki.com", // Your portfolio URL
+  canonical: "https://prateeksolanki.com",
 };
 
 const crimson = localfont({
