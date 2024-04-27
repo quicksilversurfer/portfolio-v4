@@ -10,7 +10,7 @@ import Header from "../components/Header";
 import Section from "../components/Section";
 
 export const metadata = {
-  metadataBase: new URL("https://prateeksolanki.com"),
+  metadataBase: new URL("https://prateeksolanki.com/"),
   title: "Prateek Solanki | Interaction Designer",
   description:
     "Interaction design portfolio of Prateek Solanki, Sr. UX Designer at AWS.",
