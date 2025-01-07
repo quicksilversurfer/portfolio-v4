@@ -2,6 +2,7 @@ import localfont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
 import clsx from "clsx";
 import "./globals.css";
+import { CSPostHogProvider } from "./providers";
 
 import { Providers } from "./providers";
 import Header from "../components/Header";
@@ -49,23 +50,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head></head>
-      <body
-        className={clsx(
-          "h-full w-full antialiased bg-base-paper dark:bg-base-black",
-          crimson.variable,
-          publicsans.variable,
-          garamond.variable,
-          sentient.variable
-        )}
-      >
-        <Providers>
-          <Header />
-          <main className="flex flex-col items-center w-full">
-            {children}
-            <Section isFooter header="connect" />
-          </main>
-        </Providers>
-      </body>
+      <CSPostHogProvider>
+        <body
+          className={clsx(
+            "h-full w-full antialiased bg-base-paper dark:bg-base-black",
+            crimson.variable,
+            publicsans.variable,
+            garamond.variable,
+            sentient.variable
+          )}
+        >
+          <Providers>
+            <Header />
+            <main className="flex flex-col items-center w-full">
+              {children}
+              <Section isFooter header="connect" />
+            </main>
+          </Providers>
+        </body>
+      </CSPostHogProvider>
     </html>
   );
 }
