@@ -11,7 +11,7 @@ import cscwCover from "@/public/images/personal/cscw.png";
 import d3Cover from "@/public/images/personal/d3people.png";
 import rssCover from "@/public/images/personal/rss-reader_cover.png";
 import hciCover from "@/public/images/hciindex/cover.png";
-import rasabhoomiCover from "@/public/images/hciindex/og.png";
+import rasabhoomiCover from "@/public/images/rasabhoomi/og.png";
 
 export default function Home() {
   return (
