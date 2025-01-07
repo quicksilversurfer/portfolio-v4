@@ -11,6 +11,7 @@ import cscwCover from "@/public/images/personal/cscw.png";
 import d3Cover from "@/public/images/personal/d3people.png";
 import rssCover from "@/public/images/personal/rss-reader_cover.png";
 import hciCover from "@/public/images/hciindex/cover.png";
+import rasabhoomiCover from "@/public/images/hciindex/og.png";
 
 export default function Home() {
   return (
@@ -58,6 +59,12 @@ export default function Home() {
         header="personal projects"
         title="I use personal projects as a playgorund to explore new ideas and technologies to continously expand my knowledge and skillset."
       >
+        <ProjectCard
+          title="Rasabhūmi"
+          description="a sveltekit app that maps protected regional specialties using mapbox to explore cultural heritage"
+          image={rasabhoomiCover}
+          link="https://rasabhoomi.vercel.app/"
+        />
         <ProjectCard
           title="HCI Index"
           description="a nextjs app that uses ai to summarize and recommend a collection of hci papers"
