@@ -1,5 +1,3 @@
-import PlausibleProvider from "next-plausible";
-
 import localfont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
 import clsx from "clsx";
@@ -20,7 +18,6 @@ export const metadata = {
   openGraph: {
     images: "/opengraph-image.png",
   },
-  canonical: "https://prateeksolanki.com",
 };
 
 const crimson = localfont({
@@ -51,9 +48,7 @@ const garamond = EB_Garamond({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <PlausibleProvider domain="prateeksolanki.com" />
-      </head>
+      <head></head>
       <body
         className={clsx(
           "h-full w-full antialiased bg-base-paper dark:bg-base-black",
