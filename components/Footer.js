@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col sm:flex-row justify-between mb-12">
+    <div className="flex flex-col sm:flex-row justify-between mb-12 max-w-screen-lg mx-auto">
       <ul className="flex flex-col sm:flex-row text-base font-sans space-y-2 sm:space-y-0">
         <li className="sm:mr-2">
           <a
@@ -53,23 +53,6 @@ export default function Footer() {
         <Link className="link-style ml-1" href="/colophon">
           colophon
         </Link>
-        {/* <a
-          href="https://nextjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link-style px-1"
-        >
-          next.js
-        </a>
-        &
-        <a
-          href="https://ptsjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link-style px-1"
-        >
-          pts.js
-        </a> */}
       </p>
     </div>
   );

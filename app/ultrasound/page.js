@@ -125,7 +125,7 @@ export default function Ultrasound() {
               professionals focus on what matters most—their patients.
             </p>
           </Block>
-          <ImgContainer>
+          <ImgContainer fullWidth>
             <div className="col-span-6">
               <Media
                 src={preferenceImg}
@@ -296,7 +296,7 @@ export default function Ultrasound() {
         </SectionHighlight>
         <ProtectedInput />
       </Section>
-      <Section header="other projects">
+      <Section header="other projects" constrain>
         <div className="grid grid-cols-2 gap-6">
           <ProjectCard
             title="shui"

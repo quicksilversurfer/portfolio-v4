@@ -121,7 +121,7 @@ export default function Vaccellent() {
               management of vaccination procedures.
             </p>
           </Block>
-          <ImgContainer>
+          <ImgContainer fullWidth>
             <div className="col-span-12">
               <Media
                 src={vaccelentOpsImg}
@@ -148,7 +148,7 @@ export default function Vaccellent() {
               Vaccellent Dashboard.
             </p>
           </Block>
-          <ImgContainer>
+          <ImgContainer fullWidth>
             <div className="col-span-12">
               <Media
                 src={vaccelentDashboardImg}

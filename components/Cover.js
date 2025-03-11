@@ -7,6 +7,27 @@ import SketchLoader from "./SketchLoader";
 
 export default function Cover({ heading, description }) {
   const pathname = usePathname();
+
+  const textVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: [0.16, 1, 0.3, 1], // Optimized ease curve (similar to CSS ease-out-expo)
+      },
+    },
+  };
+
+  const staggerContainer = {
+    visible: {
+      transition: {
+        staggerChildren: 0.05, // Slight delay between heading and description
+      },
+    },
+  };
+
   return (
     <section
       className={clsx("w-full", {
@@ -20,42 +41,36 @@ export default function Cover({ heading, description }) {
       })}
     >
       <div className="max-w-screen-lg px-8 mx-auto w-full">
-        <motion.h1
-          initial={{ opacity: 0, y: 6 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 12,
-            damping: 5,
-          }}
-          className={clsx(
-            " font-serif font-light text-6xl text-base-black dark:text-base-200 mb-12",
-            {
-              "mb-8 sm:mb-12 sm:text-8xl": pathname === "/",
-              "mb-8 sm:text-8xl": pathname !== "/",
-            }
-          )}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={staggerContainer}
         >
-          {heading}
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 6 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 5,
-            damping: 5,
-          }}
-          className={clsx(
-            "font-serif font-thin text-4xl text-base-600 dark:text-base-500 text-balance",
-            {
-              "sm:text-7xl sm:leading-[1.2]": pathname === "/",
-              "sm:text-5xl mb-12 sm:leading-[1.2]": pathname !== "/",
-            }
-          )}
-        >
-          {description}
-        </motion.p>
+          <motion.h1
+            variants={textVariants}
+            className={clsx(
+              "font-serif font-light text-6xl text-base-black dark:text-base-200 mb-12",
+              {
+                "mb-8 sm:mb-12 sm:text-8xl": pathname === "/",
+                "mb-8 sm:text-8xl": pathname !== "/",
+              }
+            )}
+          >
+            {heading}
+          </motion.h1>
+          <motion.p
+            variants={textVariants}
+            className={clsx(
+              "font-serif font-thin text-4xl text-base-600 dark:text-base-500 text-balance",
+              {
+                "sm:text-7xl sm:leading-[1.2]": pathname === "/",
+                "sm:text-5xl mb-12 sm:leading-[1.2]": pathname !== "/",
+              }
+            )}
+          >
+            {description}
+          </motion.p>
+        </motion.div>
       </div>
       <SketchLoader />
     </section>

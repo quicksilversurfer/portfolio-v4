@@ -71,7 +71,7 @@ export default function AWS() {
               making complex systems more intuitive.
             </p>
           </Block>
-          <Divider />
+          <Divider constrain />
           <Block title="Making cost optimization intuitive with Aurora I/O-Optimized">
             <p>
               The launch of{" "}
@@ -114,7 +114,7 @@ export default function AWS() {
               with high I/O workloads.
             </p>
           </Block>
-          <ImgContainer>
+          <ImgContainer fullWidth>
             <div className="col-span-6">
               <Media
                 src={img_1}
@@ -132,7 +132,7 @@ export default function AWS() {
               testimonials
             </span>
           </ImgContainer>
-          <Divider />
+          <Divider constrain />
           <Block title="Creating consistent patterns for MemoryDB Reserved Instances">
             <p>
               When{" "}
@@ -173,7 +173,7 @@ export default function AWS() {
           </Blockquote>
         </SectionHighlight>
       </Section>
-      <Section header="other projects">
+      <Section header="other projects" constrain>
         <div className="grid grid-cols-2 gap-6">
           <ProjectCard
             title="ultrasound"

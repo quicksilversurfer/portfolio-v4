@@ -1,9 +1,17 @@
 import React from "react";
 
-export default function ImgContainer({ children }) {
+export default function ImgContainer({
+  children,
+  fullWidth = false,
+  className = "",
+}) {
   return (
-    <section className="grid grid-cols-12 gap-4 font-sans pb-12">
-      {children}
+    <section className={`font-sans pb-12 ${className}`}>
+      <div
+        className={fullWidth ? "px-8 lg:px-16" : "max-w-screen-lg px-8 mx-auto"}
+      >
+        <div className="grid grid-cols-12 gap-4">{children}</div>
+      </div>
     </section>
   );
 }

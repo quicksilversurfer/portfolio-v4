@@ -13,24 +13,26 @@ function Loading(props) {
 
 export default function ProtectedContent({ soon, loading, children }) {
   return (
-    <section className="font-sans mb-20 flex-col border p-12 rounded-md border-yellow/30 dark:border-yellow/20 bg-gradient-to-br from-yellow/5 to-yellow/30 dark:from-base-900 dark:to-base-950">
-      <h3 className="pb-8 sm:pb-2 text-base text-base-600 dark:text-base-400 font-normal">
-        Protected Content
-      </h3>
-      <h2 className="text-5xl pb-4 font-extralight text-balance text-base-black dark:text-base-50 leading-tight">
-        Case Study
-      </h2>
-      <p className="text-2xl font-extralight text-pretty leading-8 pb-12">
-        {soon
-          ? "In the works, coming soon..."
-          : "To view, please enter the password."}
-      </p>
-      {loading ? (
-        <div>
-          <Loading className="w-5 h-5" />
-        </div>
-      ) : null}
-      {children ? <div>{children}</div> : null}
-    </section>
+    <div className="max-w-screen-lg mx-auto px-8">
+      <section className="font-sans mb-20 flex-col border p-12 rounded-md border-yellow/30 dark:border-yellow/20 bg-gradient-to-br from-yellow/5 to-yellow/30 dark:from-base-900 dark:to-base-950">
+        <h3 className="pb-8 sm:pb-2 text-base text-base-600 dark:text-base-400 font-normal">
+          Protected Content
+        </h3>
+        <h2 className="text-5xl pb-4 font-extralight text-balance text-base-black dark:text-base-50 leading-tight">
+          Case Study
+        </h2>
+        <p className="text-2xl font-extralight text-pretty leading-8 pb-12">
+          {soon
+            ? "In the works, coming soon..."
+            : "To view, please enter the password."}
+        </p>
+        {loading ? (
+          <div>
+            <Loading className="w-5 h-5" />
+          </div>
+        ) : null}
+        {children ? <div>{children}</div> : null}
+      </section>
+    </div>
   );
 }

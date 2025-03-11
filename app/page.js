@@ -23,6 +23,7 @@ export default function Home() {
       <Section
         header="work"
         title="At AWS, I help build tools that empower businesses to manage their data with ease and efficiency."
+        constrain
       >
         <ProjectCard
           title="AWS"
@@ -58,6 +59,7 @@ export default function Home() {
       <Section
         header="personal projects"
         title="I use personal projects as a playgorund to explore new ideas and technologies to continously expand my knowledge and skillset."
+        constrain
       >
         <ProjectCard
           title="Rasabhūmi"
@@ -95,6 +97,7 @@ export default function Home() {
       <Section
         header="about"
         title="Design is understanding made visible—a bridge between complex systems and the humans who use them."
+        constrain
       >
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 sm:col-span-8 sm:col-start-5 font-sans mb-4 sm:mb-12 space-y-4">

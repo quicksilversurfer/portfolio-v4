@@ -71,7 +71,7 @@ export default function Shui() {
               legacy product lines.
             </p>
           </Block>
-          <ImgContainer>
+          <ImgContainer fullWidth>
             <div className="col-span-12">
               <Media
                 src={useCases}
@@ -139,7 +139,7 @@ export default function Shui() {
         </SectionHighlight>
         <ProtectedContent soon />
       </Section>
-      <Section header="other projects">
+      <Section header="other projects" constrain>
         <div className="grid grid-cols-2 gap-6">
           <ProjectCard
             title="Ultrasound"
