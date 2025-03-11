@@ -94,40 +94,51 @@ export default function Home() {
       </Section>
       <Section
         header="about"
-        title="Design is a combination of understanding & expression. A synthesis of form, function and context to create meaning."
+        title="Design is understanding made visible—a bridge between complex systems and the humans who use them."
       >
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 sm:col-span-8 sm:col-start-5 font-sans mb-4 sm:mb-12 space-y-4">
             <p>
-              Born and brought up in India, I studied Mechatronics engineering
-              in school because I believed it would give me the broadest
-              introduction to how things are built. Joined an IT company to
-              learn how things are built on the internet. Shifted to working at
-              the intersection of design and engineering, to explore what I felt
-              passionate about. And finally went to school in Italy when I
-              realized that design was my true calling.
+              My journey began in India with Mechatronics engineering—a field
+              that interweaves mechanical, electronic, and software systems.
+              This foundation gave me an appreciation for how different elements
+              come together to create functional wholes. After working in IT and
+              experiencing how digital products evolve, I found myself drawn to
+              the human side of technology. This curiosity eventually led me to
+              Italy to study Interaction Design, formalizing what had been an
+              intuitive interest.
             </p>
             <p>
-              To me, design is far more than aesthetics or utility; it's a deep
-              understanding of a domain and its community. By immersing myself
-              in these complex environments, I aim to gain insights about
-              motives, goals, and context that shape acitivites in a domain.
-              This holistic understanding allows me to systematically design
-              solutions that integrate into people's lives addressing addressing
-              their needs, motivations, among other factors that influence their
-              interactions.
+              What continues to fascinate me about design is finding clarity
+              within complexity. Each domain—whether healthcare or cloud
+              computing—contains its own language, rituals, and mental models.
+              I'm drawn to these specialized worlds, uncovering how humans
+              navigate their environments and translate their expertise into
+              daily workflows. By immersing myself in these contexts, I can
+              distill complex knowledge into frameworks that reveal underlying
+              patterns. This exploration resembles learning a new language,
+              where each term, task, and interaction carries layers of
+              meaning—presenting opportunities for design to simplify and
+              enhance the experience.
             </p>
             <p>
-              With a diverse portfolio spanning multiple complex domains, I have
-              honed the ability to quickly learn about these environments,
-              distilling insights to enable cross-functional collaboration and
-              innovation. I bring a strategic, collaborative, critical thinking
-              approach and mindset to achieve team and business objectives by
-              creating solutions that resonate with people.
+              Through various research methods, I build an understanding of both
+              technical systems and human needs. The most rewarding moments come
+              when these perspectives align—when a complex capability becomes an
+              intuitive interaction. My work often involves creating artifacts
+              that make abstract concepts tangible, helping teams develop a
+              shared vocabulary and vision. These thinking tools become bridges
+              between different disciplines, enabling collaboration toward
+              clearer solutions.
             </p>
             <p>
-              Design empowers me to express the change I want to see in the
-              world — and work with people and teams attempting to do the same.
+              I believe the most elegant design does the heavy lifting so users
+              don't have to. It reveals only what's necessary at each moment,
+              creating a sense of flow rather than friction. This principle
+              guides my approach across projects, whether reimagining medical
+              devices or simplifying cloud infrastructure. My aim is to create
+              spaces where complexity recedes into the background, and people
+              can focus on their actual goals rather than the tools themselves.
             </p>
           </div>
         </div>

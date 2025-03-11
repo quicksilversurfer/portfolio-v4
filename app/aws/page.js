@@ -39,44 +39,40 @@ export default function AWS() {
       <Section projectInfo={awsDetails}>
         <SectionHighlight
           kicker="Project Overview"
-          heading="Designing for efficiency and ease of use in the AWS Console"
-          subHeading="My contributions to streamlining user interfaces and workflows within the AWS Console led to increased adoption of cost-saving features and improved user experience for managing cloud-based database systems.
-"
+          heading="Simplifying Cloud Infrastructure in the AWS Console"
+          subHeading="My work at AWS focuses on transforming complex database management into intuitive experiences—resulting in higher adoption of cost-saving features and more efficient workflows for cloud infrastructure."
         >
-          <Block title="Role & contributions">
+          <Block title="Role & approach">
             <p>
-              At AWS, I am part of the Databases service team, responsible for
-              delivering modern and fully managed cloud database management
-              systems.
+              At AWS, I work with the Databases service team designing
+              interfaces for modern, fully managed cloud database systems. My
+              focus is on making powerful but complex technologies accessible
+              through thoughtful design.
             </p>
             <p>
-              As a UX Designer, my primary focus is enhancing the usability,
-              functionality, and accessibility of the AWS Console. This involves
-              aligning my design approach with the five pillars of the AWS
-              Well-Architected Framework: Operational Excellence, Security,
-              Reliability, Performance Efficiency, and Cost Optimization.
+              The AWS Console serves as the central interface where customers
+              manage critical infrastructure—creating databases, configuring
+              settings, monitoring performance, and optimizing costs. My
+              challenge is to translate technical capabilities into interfaces
+              that feel natural and predictable, regardless of a user's
+              technical background.
             </p>
             <p>
-              My work centers around crafting intuitive interfaces that simplify
-              complex cloud computing tasks for our customers. The AWS Console
-              serves as the central platform for managing cloud resources,
-              monitoring system performance, and ensuring security compliance.
+              My design process begins by understanding the mental models of
+              both database experts and those new to cloud infrastructure. This
+              foundation helps me create experiences that align with the AWS
+              Well-Architected Framework's pillars: Operational Excellence,
+              Security, Reliability, Performance Efficiency, and Cost
+              Optimization.
             </p>
             <p>
-              I strive to create experiences that seamlessly support these
-              critical activities, from streamlining workflows to surfacing key
-              insights, ultimately optimizing the console to align with
-              customers' diverse needs.
-            </p>
-            <p>
-              While I am actively involved in a range of projects, some
-              involving unreleased features and confidential information, I am
-              pleased to share a few projects that I've contributed to, and are
-              released in the AWS Console.
+              While many of my projects involve unreleased features, the
+              following examples demonstrate how I approach the challenge of
+              making complex systems more intuitive.
             </p>
           </Block>
           <Divider />
-          <Block title="Enabling Cost Optimization with Aurora I/O-Optimized Configuration">
+          <Block title="Making cost optimization intuitive with Aurora I/O-Optimized">
             <p>
               The launch of{" "}
               <a
@@ -87,32 +83,35 @@ export default function AWS() {
               >
                 Amazon Aurora I/O-Optimized
               </a>{" "}
-              marked a significant advancement in database solutions for
-              I/O-intensive applications. This new cluster configuration offers
-              enhanced price performance and more predictable pricing,
-              particularly benefiting customers running e-commerce applications,
-              payment processing systems, and similar workloads. Aurora
-              I/O-Optimized is engineered to increase throughput and reduce
-              latency, addressing the needs of the most demanding database
-              operations.
+              created an opportunity to deliver significant cost savings for
+              I/O-intensive applications like e-commerce platforms and payment
+              processing systems. The technical complexity behind this
+              feature—involving throughput optimization and latency
+              reduction—presented a key design challenge: how to make this
+              sophisticated capability accessible without overwhelming users.
             </p>
           </Block>
           <Blockquote>
-            By designing a clear and intuitive interface for selecting and
-            managing Aurora I/O-Optimized configurations, we empowered customers
-            to easily adopt this cost-saving feature and optimize their database
-            expenses for I/O-intensive workloads.
+            Technical capabilities only deliver value when customers can easily
+            discover, understand, and implement them. Our design approach
+            transformed a complex pricing model into a clear decision point,
+            enabling more customers to optimize their database expenses.
           </Blockquote>
           <Block>
             <p>
-              My role in this project involved defining a clear and intuitive
-              user interface within the AWS Console to make it easier for
-              customers to leverage this powerful feature. By creating a clear
-              and intuitive interface for selecting and managing I/O-Optimized
-              configurations, we empowered customers to optimize their database
-              costs effectively. This resulted in a significant increase in the
-              adoption of I/O-Optimized configurations and substantial cost
-              savings for customers with high I/O workloads.
+              I approached this by creating a clear decision framework within
+              the console, highlighting the benefits of I/O-Optimized
+              configurations at key moments in the customer journey. This
+              required close collaboration with product managers to understand
+              the technical nuances, and with engineers to ensure the interface
+              accurately represented system capabilities.
+            </p>
+            <p>
+              The resulting design simplified the selection process while
+              providing context that helped customers make informed decisions.
+              This clarity led to higher adoption rates of I/O-Optimized
+              configurations and delivered meaningful cost savings for customers
+              with high I/O workloads.
             </p>
           </Block>
           <ImgContainer>
@@ -134,9 +133,9 @@ export default function AWS() {
             </span>
           </ImgContainer>
           <Divider />
-          <Block title="Facilitating cost savings with MemoryDB Reserved Instances">
+          <Block title="Creating consistent patterns for MemoryDB Reserved Instances">
             <p>
-              The introduction of{" "}
+              When{" "}
               <a
                 href="https://aws.amazon.com/about-aws/whats-new/2022/12/amazon-memorydb-redis-reserved-nodes/"
                 target="_blank"
@@ -145,28 +144,32 @@ export default function AWS() {
               >
                 Reserved nodes in Amazon MemoryDB for Redis
               </a>{" "}
-              presented a valuable opportunity for customers to achieve cost
-              savings of up to 55% compared to On-Demand node pricing. This
-              initiative introduced flexible one- or three-year term commitments
-              with various payment options, including No Upfront, Partial
-              Upfront, and All Upfront.
+              launched, customers gained access to potential savings of up to
+              55% compared to On-Demand pricing. However, the concept of
+              reserved instances involves complex trade-offs between term
+              lengths, payment options, and flexibility considerations.
             </p>
             <p>
-              To ensure a seamless user experience, I focused on streamlining
-              the interface for selecting and managing reserved nodes within the
-              AWS Management Console. By designing an intuitive reservation
-              flow, we reduced the time and effort required for customers to
-              purchase and manage their MemoryDB Reserved Instances. This
-              resulted in increased adoption and contributed to substantial cost
-              savings for our customers. Additionally, I facilitated alignment
-              of this feature across other AWS services to ensure a consistent
-              and user-friendly experience.
+              My challenge was to create an interface that would guide customers
+              through these decisions while maintaining consistency with similar
+              reservation flows across AWS. This required creating a mental
+              model that made these abstract pricing concepts tangible and easy
+              to compare.
+            </p>
+            <p>
+              Working closely with the product team, I designed a streamlined
+              reservation flow that reduced friction in the purchase process
+              while helping customers understand the implications of their
+              choices. The resulting interface balanced simplicity with the
+              detail necessary for confident decision-making, contributing to
+              increased adoption and substantial customer savings.
             </p>
           </Block>
           <Blockquote>
-            The streamlined reservation flow for MemoryDB Reserved Instances
-            enabled customers to easily adopt this cost-saving option, leading
-            to increased efficiency and significant cost reductions.
+            Consistency across AWS services creates a sense of familiarity that
+            helps customers navigate complex decisions. Our work on MemoryDB
+            reservations built on established patterns while refining the
+            experience to increase clarity and confidence.
           </Blockquote>
         </SectionHighlight>
       </Section>

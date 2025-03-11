@@ -45,11 +45,15 @@ export default function Ultrasound() {
       <Section projectInfo={ultrasoundDetails}>
         <SectionHighlight
           kicker="Project Overview"
-          heading="Designing Next-Generation Ultrasound Systems"
-          subHeading="My contributions to the user-centered design of the ACUSON Sequoia and ACUSON Origin ultrasound systems led to exceptional results, with 82% user preference for the Sequoia and a best-in-class System Usability Score of 86."
+          heading="Transforming Complex Medical Devices into Intuitive Tools"
+          subHeading="Leading the design of next-generation ultrasound systems that achieved 82% user preference and a system usability score of 86—making sophisticated medical technology accessible through thoughtful design."
         >
           <Block title="Role & contributions">
             <p>
+              Medical imaging represents one of the most complex intersections
+              of technology and human expertise. Ultrasound systems must balance
+              powerful capabilities with usability in high-pressure environments
+              where every moment matters. The{" "}
               <a
                 href="https://www.siemens-healthineers.com/en-us/ultrasound/new-era-ultrasound/acuson-sequoia"
                 target="_blank"
@@ -58,7 +62,7 @@ export default function Ultrasound() {
               >
                 ACUSON Sequoia
               </a>{" "}
-              and the{" "}
+              and{" "}
               <a
                 href=""
                 target="_blank"
@@ -67,11 +71,11 @@ export default function Ultrasound() {
               >
                 ACUSON Origin
               </a>{" "}
-              are the next generation Ultrasound product platforms for Siemens
-              Healthineers. As part of a small, dedicated UX team of four
-              designers, I played a crucial role in defining the user experience
-              and interaction design of both the ACUSON Sequoia and ACUSON
-              Origin ultrasound platforms. Working alongside{" "}
+              projects presented an opportunity to reimagine how healthcare
+              professionals interact with these essential diagnostic tools.
+            </p>
+            <p>
+              As part of a focused four-person UX team, I collaborated with{" "}
               <a
                 href="https://www.linkedin.com/in/eminsinani/"
                 target="_blank"
@@ -97,66 +101,30 @@ export default function Ultrasound() {
                 className="link-style"
               >
                 Aishwarya Suresh
-              </a>
-              , and a pool of interns our team collaborated closely with
-              ultrasound human factor engineers, product managers, and clinical
-              teams to ensure a holistic and user-centered approach throughout
-              the design process.
-            </p>
-            <p>
-              Our goal was to address prevalent challenges in ultrasound imaging
-              by focusing on ease of use, learnability, and standardization –
-              factors critical to improving efficiency and effectiveness for
-              healthcare professionals, especially considering the{" "}
+              </a>{" "}
+              to address a growing challenge in healthcare: the{" "}
               <a
                 href="https://pubmed.ncbi.nlm.nih.gov/38534218/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link-style"
               >
-                growing shortage of sonographers{" "}
+                increasing shortage of specialized sonographers{" "}
               </a>
-              and trained ultrasound technicians in the field. This shortage has
-              placed increased pressure on healthcare facilities, often
-              requiring them to hire freelance sonographers who need to quickly
-              adapt to different ultrasound systems. Therefore, creating
-              intuitive and standardized interfaces was essential to
-              facilitating efficient workflows and reducing the learning curve
-              for both new and experienced users.
+              . This staffing reality meant many facilities relied on traveling
+              technicians who needed to quickly adapt to different
+              systems—making intuitive interfaces and standardized interactions
+              essential.
             </p>
             <p>
-              Our user-centered process, incorporating extensive user research,
-              iterative prototyping, and usability testing, ultimately led to
-              intuitive interfaces that were favored by{" "}
-              <a
-                href="https://cdn0.scrvt.com/39b415fb07de4d9656c7b516d8e2d907/a9f2e35938123fba/71722cb4bb86/Siemens-White-Paper_FINAL-HOOD05162003107116--1-.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link-style"
-              >
-                82% of study participants.{" "}
-              </a>
-              The ACUSON Sequoia achieved a best-in-class System Usability Score
-              (SUS) of 86, exceeding industry standards and demonstrating the
-              success of our design approach. The system was also recognized for
-              its design excellence, receiving the prestigious{" "}
-              <a
-                href="https://www.red-dot.org/project/acuson-sequoia-38968"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link-style"
-              >
-                Red Dot Design Award
-              </a>{" "}
-              in 2019.
+              Our opportunity was to reimagine these complex devices as
+              intuitive tools that would feel natural to both experienced users
+              and those new to the platform. Working closely with ultrasound
+              engineers, clinical specialists, and human factors experts, we set
+              out to create interfaces that would reduce cognitive load and help
+              professionals focus on what matters most—their patients.
             </p>
           </Block>
-          <Blockquote>
-            The success of the ACUSON Sequoia and ACUSON Origin is a testament
-            to the power of user-centered design and the collaborative spirit of
-            the team. Witnessing healthcare professionals embrace these systems
-            with such enthusiasm was truly rewarding.
-          </Blockquote>
           <ImgContainer>
             <div className="col-span-6">
               <Media
@@ -175,36 +143,37 @@ export default function Ultrasound() {
               Healthineers / Macadamian Technologies
             </span>
           </ImgContainer>
-
-          <Block title="ACUSON Sequoia: Role & contributions">
+          <Block title="ACUSON Sequoia: Establishing foundations">
             <p>
-              My involvement in the ACUSON Sequoia project began in the early
-              research and concept exploration phase. During this time, we
-              explored a wide range of design concepts, from incremental
-              improvements to radical redesigns of the user interface.
+              My journey with the Sequoia platform began during early concept
+              exploration, where we balanced ambitious reinvention with the
+              realities of established clinical workflows. Rather than assuming
+              we knew what users needed, we built functional prototypes in
+              Flash, Processing, and Java to test different interaction models
+              with actual sonographers.
             </p>
             <p>
-              I contributed to building functional prototypes using Flash,
-              Processing, and Java, which allowed us to test key concepts with
-              sonographers and gather valuable feedback on their preferences.
-              These early prototypes explored ideas such as reducing the number
-              of keys on the control panel, introducing a trackpad instead of a
-              trackball, and reorganizing the information architecture based on
-              user mental models. This iterative process of prototyping and user
-              testing was instrumental in shaping the design direction of the
-              Sequoia platform.
+              These prototypes explored foundational questions: Could we reduce
+              the complexity of the control panel without sacrificing
+              functionality? Would a trackpad provide better usability than the
+              traditional trackball? How might we reorganize the information
+              architecture to better match users' mental models?
             </p>
             <p>
-              Additionally, I tackled the complex challenge of analyzing the
-              existing information architecture and defining intuitive methods
-              for adjusting system controls, ensuring a seamless and efficient
-              user experience.
+              This early exploration phase revealed important insights about how
+              sonographers think about their work and interact with ultrasound
+              systems. By mapping the existing system controls, modes, and
+              categories, I created a framework that would guide the
+              reorganization of features into more intuitive groupings—making
+              the system feel like a natural extension of the user's intent
+              rather than a complex machine.
             </p>
             <p>
-              Later in the project, I played a key role in maintaining
-              harmonization between the Sequoia platform and the specialized
-              Cardiology device (ACUSON Origin), aligning workflows,
-              terminology, and visual design elements across both systems.
+              The iterative prototyping and testing approach continued
+              throughout development, allowing us to refine the interface based
+              on continuous user feedback. The result was a system that felt
+              both familiar and improved—maintaining critical workflows while
+              reducing unnecessary complexity.
             </p>
           </Block>
           <ImgContainer>
@@ -225,41 +194,48 @@ export default function Ultrasound() {
               Siemens Healthineers
             </span>
           </ImgContainer>
-          <Block title="ACUSON Origin: Role & contributions">
+          <Blockquote>
+            When designing medical devices, the stakes are uniquely high—these
+            are tools that professionals rely on to make critical decisions.
+            Finding clarity in this complexity means creating systems that fade
+            into the background, allowing healthcare providers to focus entirely
+            on patient care.
+          </Blockquote>
+          <Block title="ACUSON Origin: Leading through research">
             <p>
-              As the project lead for the ACUSON Origin alongside Aishwarya
-              Suresh, I spearheaded the design and development of this
-              cardiology-specific ultrasound system, playing a pivotal role in
-              its transformation from concept to reality. My responsibilities
-              spanned the entire project lifecycle, from planning and executing
-              an extensive international user research initiative to leading the
-              iterative design and refinement of the user interface.
+              As project lead for the ACUSON Origin alongside Aishwarya Suresh,
+              I faced the challenge of creating a specialized cardiology
+              ultrasound system that would integrate seamlessly into established
+              clinical workflows while introducing meaningful improvements. This
+              required deep immersion in the world of cardiac imaging—a domain
+              with its own language, procedures, and expectations.
             </p>
             <p>
-              The user research, conducted across the USA, Germany, and China,
-              involved in-depth interviews, evaluations, and site visits with
-              over 40 cardiologists and sonographers. This provided us with
-              invaluable insights into real-world cardiology workflows, pain
-              points, and unmet needs.
+              To build this understanding, I designed and led comprehensive
+              research across three countries, gathering insights from over 40
+              cardiologists and sonographers. These studies went beyond
+              superficial preference testing, using methods like contextual
+              inquiry, workflow analysis, and controlled experiments to reveal
+              the nuances of how cardiac imaging professionals work.
             </p>
             <p>
-              A key outcome of this research was the identification of potential
-              usability issues with the initially proposed trackpad input
-              device. Through rigorous testing and data analysis, we were able
-              to demonstrate the superiority of the traditional trackball for
-              precise measurements and user comfort, leading to a pivotal
-              decision that impacted the entire Sequoia platform.
+              A pivotal moment came when our research revealed a significant
+              usability issue with the proposed trackpad input device. By
+              designing a controlled study based on Fitts' Law principles, we
+              collected objective data showing that the traditional trackball
+              provided significantly better precision for critical measurement
+              tasks. This evidence-based approach led to a fundamental design
+              decision that ultimately affected the entire platform.
             </p>
             <p>
-              Beyond user research, I led the iterative definition of the
-              control panel, touch screen, and monitor UI through
-              cross-functional workshops, formative evaluations, and continuous
-              refinement based on user feedback. This collaborative process
-              ensured that the final design was not only intuitive and efficient
-              but also tailored to the specific workflows and preferences of
-              cardiologists worldwide. The successful launch of the ACUSON
-              Origin, met with praise from the medical community, is a testament
-              to the impact of this user-centered design approach.
+              The development process continued through iterative definition of
+              the control panel, touchscreen interface, and monitor UI. I
+              facilitated cross-functional workshops that brought together
+              clinical, engineering, and design perspectives—creating alignment
+              around a shared vision for the product and the overall Sequioa
+              platform. This collaborative approach ensured that the final
+              system not only worked effectively but genuinely enhanced the
+              workflow of cardiac imaging professionals.
             </p>
           </Block>
           <ImgContainer>
@@ -277,6 +253,46 @@ export default function Ultrasound() {
               Image Credit: Siemens Healthineers
             </span>
           </ImgContainer>
+          <Block title="Results & impact">
+            <p>
+              The true measure of our work came when independent evaluations
+              showed that{" "}
+              <a
+                href="https://cdn0.scrvt.com/39b415fb07de4d9656c7b516d8e2d907/a9f2e35938123fba/71722cb4bb86/Siemens-White-Paper_FINAL-HOOD05162003107116--1-.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-style"
+              >
+                82% of study participants{" "}
+              </a>{" "}
+              preferred the ACUSON systems over competing devices. The Sequoia
+              achieved an exceptional System Usability Score of 86—well above
+              industry standards—and earned the{" "}
+              <a
+                href="https://www.red-dot.org/project/acuson-sequoia-38968"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-style"
+              >
+                Red Dot Design Award
+              </a>{" "}
+              for excellence in Industrial Design.
+            </p>
+            <p>
+              Beyond the metrics, seeing healthcare professionals interact with
+              these systems revealed the real impact of our work. Tasks that
+              once required navigating complex menus became intuitive. Features
+              that had been hidden became discoverable. Most importantly, the
+              technology receded into the background, allowing clinicians to
+              focus on what truly matters—providing excellent patient care.
+            </p>
+          </Block>
+          <Blockquote>
+            The most elegant design solutions don't draw attention to
+            themselves—they simply make complex tasks feel natural. Watching
+            sonographers intuitively use systems we designed, without requiring
+            instruction or explanation, was the true measure of our success.
+          </Blockquote>
         </SectionHighlight>
         <ProtectedInput />
       </Section>
