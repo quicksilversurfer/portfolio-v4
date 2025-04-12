@@ -12,8 +12,8 @@ import ProtectedInput from "@/components/ProtectedInput";
 // images
 import usabilityImg from "@/public/images/ultrasound/usability.png";
 import preferenceImg from "@/public/images/ultrasound/preference.png";
-import shuiCover from "@/public/images/shui/shui_cover.jpeg";
-import vaccellentCover from "@/public/images/tva/vaccellent_cover.jpg";
+import shuiCover from "@/public/images/shui/shui_home_cover.png";
+import vaccellentCover from "@/public/images/tva/vaccellent_home_cover.png";
 import img_1 from "@/public/images/ultrasound/1_Ultrasound.png";
 import img_2 from "@/public/images/ultrasound/2_Ultrasound.png";
 import img_3 from "@/public/images/ultrasound/3_Ultrasound.png";

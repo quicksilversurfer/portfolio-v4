@@ -40,7 +40,7 @@ export default function Cover({ heading, description }) {
         "items-end": !pathname.startsWith("/") && !pathname.startsWith("/blog"),
       })}
     >
-      <div className="max-w-screen-lg px-8 mx-auto w-full">
+      <div className="max-w-screen-lg mx-auto w-full">
         <motion.div
           initial="hidden"
           animate="visible"

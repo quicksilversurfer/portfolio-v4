@@ -1,124 +1,114 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useCallback, useRef } from "react";
 import { PtsCanvas } from "react-pts-canvas";
-import { Pt, Group, Noise } from "pts";
+import { Pt, Group, Const } from "pts";
 
+// --- Constants (Keep these as they are) ---
+const BIRD_COUNT_INITIAL = 250;
+const MAX_BIRDS = 300;
+const ADD_BIRD_CHANCE = 0.01;
+const BIRD_COLORS = ["#AD8301", "#BC9A2D", "#A37B16"];
+const BOUNDARY_BUFFER = 20;
+
+// --- Bird Class (Keep this as it is) ---
 class Bird {
   constructor(
     position = new Pt(),
     velocity = new Pt(),
-    type = 0,
     depth = 1,
     color = "#DA702C"
   ) {
     this.position = position;
     this.velocity = velocity;
-    this.type = type;
-    this.angle = Math.random() * Math.PI * 5;
-    this.variationSpeed = Math.random() * 0.1 + 0.15;
-    this.depth = depth; // Depth factor, affects size and transparency
-    this.color = color; // Color of the bird
-    this.wingAngle = 1; // Wing angle for flapping animation
-    this.wingSpeed = Math.random() * 0.1 + 0.05; // Wing flapping speed
-    this.wingRange = Math.random() * 0.5 + 0.5; // Wing flapping range
+    this.angle = Math.random() * Math.PI * 2;
+    this.variationSpeed = Math.random() * 0.05 + 0.05;
+    this.depth = depth;
+    this.color = color;
+    this.wingAngle = Math.random() * Math.PI * 2;
+    this.wingSpeed = Math.random() * 0.1 + 0.08;
+    this.wingRange = Math.random() * 0.4 + 0.6;
+    this.rgbColor = this.getRGBFromHex(color);
+    this.leftWingCurve = 0;
+    this.rightWingCurve = 0;
   }
 
   move(space) {
-    // Base horizontal speed
-    this.position.x += this.velocity.x * this.depth * 0.35;
-
-    // Smooth wave-like vertical movement
+    // --- Movement Physics ---
+    this.position.x += this.velocity.x * this.depth * 0.4;
     this.angle += this.variationSpeed;
-    let sineValue = Math.sin(this.angle);
-    this.position.y += sineValue * 0.01 * this.depth;
-
-    // Occasional course correction (small chance to change direction slightly)
+    const sineValue = Math.sin(this.angle);
+    this.position.y += sineValue * 0.015 * this.depth;
     if (Math.random() < 0.02) {
-      this.velocity.y += (Math.random() - 0.5) * 0.2;
+      this.velocity.y += (Math.random() - 0.5) * 0.15;
     }
-
-    // Wing flapping animation
     this.wingAngle += this.wingSpeed;
-    let wingFlap = Math.sin(this.wingAngle) * this.wingRange;
-
-    // Vertical movement from wing flapping - more pronounced for smaller birds
-    this.position.y += wingFlap * (1.1 - this.depth) * 0.3;
-
-    // Horizontal boundary check
-    if (this.position.x > space.width) {
-      this.position.x = -20;
-      // Randomize vertical position when re-entering
-      this.position.y = Math.random() * space.height * 0.8 + space.height * 0.1;
+    if (this.wingAngle > Const.two_pi) {
+      this.wingAngle -= Const.two_pi;
     }
+    const wingFlap = Math.sin(this.wingAngle) * this.wingRange;
+    this.position.y += wingFlap * this.depth * 0.3;
 
-    // Vertical boundary check with smoother correction
-    const buffer = 20;
-    if (this.position.y < buffer) {
-      this.position.y = buffer;
-      this.velocity.y = Math.abs(this.velocity.y) * 0.5;
-    } else if (this.position.y > space.height - buffer) {
-      this.position.y = space.height - buffer;
-      this.velocity.y = -Math.abs(this.velocity.y) * 0.5;
+    // --- Boundary Checks ---
+    if (this.position.x > space.width + BOUNDARY_BUFFER) {
+      this.position.x = -BOUNDARY_BUFFER;
+    } else if (this.position.x < -BOUNDARY_BUFFER) {
+      this.position.x = space.width + BOUNDARY_BUFFER;
     }
-
-    // Dampen vertical velocity for stability
+    if (this.position.y < BOUNDARY_BUFFER) {
+      this.position.y = BOUNDARY_BUFFER;
+      this.velocity.y *= -0.5;
+      this.velocity.y += 0.1;
+    } else if (this.position.y > space.height - BOUNDARY_BUFFER) {
+      this.position.y = space.height - BOUNDARY_BUFFER;
+      this.velocity.y *= -0.5;
+      this.velocity.y -= 0.1;
+    }
     this.velocity.y *= 0.98;
-
-    // Update wing curve properties based on wing flapping
     this.leftWingCurve =
-      Math.sin(this.wingAngle - Math.PI / 4) * this.wingRange * 2;
+      Math.sin(this.wingAngle - Math.PI / 3) * this.wingRange;
     this.rightWingCurve =
-      Math.sin(this.wingAngle + Math.PI / 4) * this.wingRange * 2;
+      Math.sin(this.wingAngle + Math.PI / 3) * this.wingRange;
   }
 
-  display(form, color) {
-    const scale = this.depth * 2.5;
-    const opacity = this.depth;
-    const alpha = Math.max(0.3, opacity * 0.8); // Better opacity control
-    const birdColor = `rgba(${this.getRGBFromHex(color)},${alpha})`;
+  display(form) {
+    const scale = this.depth * 3.0;
+    const alpha = Math.max(0.2, Math.min(1.0, this.depth * 0.9));
+    const birdColor = `rgba(${this.rgbColor},${alpha})`;
+    const wingStrokeWidth = Math.max(1, this.depth);
 
-    // Draw the triangular body of the bird
-    let body = Group.fromArray([
-      this.position.$add(-0.5 * scale, 0.5 * scale), // Back of the triangle
-      this.position, // Tip of the triangle (front)
-      this.position.$add(0.15 * scale * 0.5, -0.5 * scale), // Bottom of the triangle
-    ]);
-    form.fillOnly(birdColor).polygon(body);
+    const bodyPoints = [
+      new Pt(-0.6 * scale, 0.1 * scale),
+      new Pt(0, -0.2 * scale),
+      new Pt(-0.6 * scale, -0.1 * scale),
+    ].map((p) => p.$add(this.position));
+    form.fillOnly(birdColor).polygon(bodyPoints);
 
-    // Add a tail
-    let tailStart = this.position.$add(-0.5 * scale, 0.5 * scale);
-    let tailEnd = this.position.$add(-0.8 * scale, 0.7 * scale);
-    form.strokeOnly(birdColor, 1).line([tailStart, tailEnd]);
-
-    // Draw left wing curve with better shape
-    let leftWingStart = this.position.$add(-0.25 * scale, 0);
-    let leftWingControl = this.position.$add(
-      -0.4 * scale,
-      (this.leftWingCurve - 0.5) * scale
+    const leftWingStart = this.position.$add(-0.2 * scale, 0);
+    const leftWingControl = this.position.$add(
+      -0.5 * scale,
+      (this.leftWingCurve - 0.2) * scale
     );
-    let leftWingEnd = this.position.$add(
-      -0.6 * scale,
-      this.leftWingCurve * scale
+    const leftWingEnd = this.position.$add(
+      -0.8 * scale,
+      this.leftWingCurve * scale * 1.1
     );
     form
-      .strokeOnly(birdColor, 1)
+      .strokeOnly(birdColor, wingStrokeWidth)
       .line([leftWingStart, leftWingControl, leftWingEnd]);
 
-    // Draw right wing curve with better shape
-    let rightWingStart = this.position.$add(0.1 * scale, 0);
-    let rightWingControl = this.position.$add(
-      0.3 * scale,
-      (this.rightWingCurve - 0.5) * scale
+    const rightWingStart = this.position.$add(-0.2 * scale, 0);
+    const rightWingControl = this.position.$add(
+      -0.5 * scale,
+      (this.rightWingCurve + 0.2) * scale
     );
-    let rightWingEnd = this.position.$add(
-      0.4 * scale,
-      this.rightWingCurve * scale
+    const rightWingEnd = this.position.$add(
+      -0.8 * scale,
+      this.rightWingCurve * scale * 1.1
     );
     form
-      .strokeOnly(birdColor, 1)
+      .strokeOnly(birdColor, wingStrokeWidth)
       .line([rightWingStart, rightWingControl, rightWingEnd]);
   }
 
-  // Utility function to convert hex to RGB
   getRGBFromHex(hex) {
     const r = parseInt(hex.slice(1, 3), 16);
     const g = parseInt(hex.slice(3, 5), 16);
@@ -127,113 +117,127 @@ class Bird {
   }
 }
 
-const PtsHome = ({ bgcolor = "", resize = "true", retina = "true" }) => {
-  const [birds, setBirds] = useState([]);
+// --- PtsHome Component ---
+// UPDATED: Changed default bgcolor to "transparent"
+const PtsHome = ({ bgcolor = "transparent", resize = true, retina = true }) => {
+  const birdsRef = useRef([]);
+  const spaceRef = useRef(null);
+  const hasInitialized = useRef(false);
 
-  useEffect(() => {
-    setBirds(initBirds());
-  }, []);
-
-  const initBirds = () => {
-    const colors = ["#AD8301", "#BC9A2D", "#A37B16"]; // More color variations
+  const initBirds = useCallback((space) => {
+    if (!space) return [];
     let tempBirds = [];
-    const birdCount = 250; // Slightly fewer birds for better performance
-
-    for (let i = 0; i < birdCount; i++) {
-      // Create depth groups - far, mid, and close birds
-      let depthGroup = Math.floor(Math.random() * 3);
+    for (let i = 0; i < BIRD_COUNT_INITIAL; i++) {
+      const depthGroup = Math.random();
       let depth;
+      if (depthGroup < 0.33) depth = Math.random() * 0.2 + 0.4;
+      else if (depthGroup < 0.66) depth = Math.random() * 0.2 + 0.6;
+      else depth = Math.random() * 0.2 + 0.8;
 
-      if (depthGroup === 0) {
-        depth = Math.random() * 0.2 + 0.4; // Far birds: 0.4-0.6
-      } else if (depthGroup === 1) {
-        depth = Math.random() * 0.2 + 0.6; // Mid-range birds: 0.6-0.8
-      } else {
-        depth = Math.random() * 0.2 + 0.8; // Close birds: 0.8-1.0
-      }
-
-      // Select color - making closer birds slightly darker
-      let colorIdx = Math.min(
-        Math.floor(depth * colors.length),
-        colors.length - 1
+      const colorIdx = Math.floor(depthGroup * BIRD_COLORS.length);
+      const color = BIRD_COLORS[Math.min(colorIdx, BIRD_COLORS.length - 1)];
+      const position = new Pt(
+        Math.random() * space.width,
+        Math.random() * (space.height - BOUNDARY_BUFFER * 2) + BOUNDARY_BUFFER
       );
-      let color = colors[colorIdx];
-
-      // Create bird with varied parameters
-      let b = new Bird(
-        new Pt(
-          Math.random() * window.innerWidth,
-          Math.random() * (window.innerHeight * 0.8) + window.innerHeight * 0.1
-        ),
-        new Pt(
-          (0.8 + Math.random() * 1.0) * depth,
-          (Math.random() - 0.5) * 0.2
-        ),
-        Math.floor(Math.random() * 3),
-        depth,
-        color
+      const velocity = new Pt(
+        (0.5 + Math.random() * 0.8) * depth,
+        (Math.random() - 0.5) * 0.2
       );
-
-      // Randomize starting wing position
-      b.wingAngle = Math.random() * Math.PI * 2;
-
-      tempBirds.push(b);
+      tempBirds.push(new Bird(position, velocity, depth, color));
     }
-
-    // Sort by depth so closer birds render on top
     return tempBirds.sort((a, b) => a.depth - b.depth);
-  };
+  }, []);
 
   const handleAnimate = useCallback(
-    (space, form) => {
-      if (birds.length > 0) {
-        // Occasionally create a new bird from the left side
-        if (Math.random() < 0.01) {
-          const existingBird = birds[Math.floor(Math.random() * birds.length)];
-          const newBird = new Bird(
-            new Pt(
-              -20,
-              Math.random() * space.height * 0.8 + space.height * 0.1
-            ),
-            new Pt(existingBird.velocity.x, existingBird.velocity.y),
-            existingBird.type,
-            existingBird.depth,
-            existingBird.color
-          );
-          setBirds((prevBirds) => [...prevBirds, newBird]);
-        }
-
-        // Sort by depth for proper rendering
-        birds.sort((a, b) => a.depth - b.depth);
-
-        // Update and display birds
-        birds.forEach((b) => {
-          b.move(space);
-          b.display(form, b.color);
-        });
-
-        // Limit total number of birds
-        if (birds.length > 300) {
-          setBirds((prevBirds) => prevBirds.slice(1));
-        }
+    (space, form, time, ftime) => {
+      if (!spaceRef.current) spaceRef.current = space;
+      if (!hasInitialized.current && space) {
+        birdsRef.current = initBirds(space);
+        hasInitialized.current = true;
       }
+      const currentBirds = birdsRef.current;
+      let needsSort = false;
+
+      if (Math.random() < ADD_BIRD_CHANCE && currentBirds.length < MAX_BIRDS) {
+        const templateBird =
+          currentBirds[Math.floor(Math.random() * currentBirds.length)];
+        const depth = templateBird.depth;
+        const color = templateBird.color;
+        const newBird = new Bird(
+          new Pt(
+            -BOUNDARY_BUFFER,
+            Math.random() * (space.height - BOUNDARY_BUFFER * 2) +
+              BOUNDARY_BUFFER
+          ),
+          new Pt(
+            (0.5 + Math.random() * 0.8) * depth,
+            (Math.random() - 0.5) * 0.2
+          ),
+          depth,
+          color
+        );
+        currentBirds.push(newBird);
+        needsSort = true;
+      }
+
+      if (currentBirds.length > MAX_BIRDS) {
+        currentBirds.shift();
+      }
+      if (needsSort) {
+        currentBirds.sort((a, b) => a.depth - b.depth);
+      }
+
+      // No manual clear needed - PtsCanvas handles it via the background prop
+      currentBirds.forEach((bird) => {
+        bird.move(space);
+        bird.display(form);
+      });
     },
-    [birds]
+    // UPDATED: Removed bgcolor from dependencies as it's constant now
+    [initBirds]
   );
 
-  const handleAction = useCallback((space, form, type, x, y) => {
-    if (type === "up") {
-      // setBirds(initBirds());
-    }
-  }, []);
+  const handleResize = useCallback(
+    (space, form, size) => {
+      if (hasInitialized.current && space) {
+        // Ensure space is valid on resize
+        birdsRef.current = initBirds(space);
+      }
+    },
+    [initBirds]
+  );
+
+  const handleAction = useCallback(
+    (space, form, type, px, py, evt) => {
+      // if (type === "up") {
+      //   if (space) {
+      //      birdsRef.current = initBirds(space);
+      //   }
+      // }
+    },
+    [initBirds]
+  );
 
   return (
     <PtsCanvas
       onAnimate={handleAnimate}
       onAction={handleAction}
+      onResize={handleResize}
+      // The background prop receives the bgcolor, now defaulting to "transparent"
       background={bgcolor}
       resize={resize}
       retina={retina}
+      // Ensure the canvas itself doesn't block underlying elements via CSS
+      style={{
+        position: "absolute", // Or 'fixed' depending on layout needs
+        top: 0,
+        left: 0,
+        zIndex: 1, // Adjust if needed relative to other absolute elements
+        pointerEvents: "none", // Allows clicks to pass through canvas to elements behind it
+        height: "100vh", // Example sizing
+        width: "100%", // Example sizing
+      }}
     />
   );
 };

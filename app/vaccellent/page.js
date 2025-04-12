@@ -12,8 +12,8 @@ import ProtectedContent from "@/components/ProtectedContent";
 //images
 import vaccelentOpsImg from "@/public/images/tva/vaccellent_operations.png";
 import vaccelentDashboardImg from "@/public/images/tva/vaccellent_dashboard.png";
-import ultrasoundCover from "@/public/images/ultrasound/ultrasound_cover.jpg";
-import shuiCover from "@/public/images/shui/shui_cover.jpeg";
+import ultrasoundCover from "@/public/images/ultrasound/ultrasound_home_cover.png";
+import shuiCover from "@/public/images/shui/shui_home_cover.png";
 
 const vaccellentDetails = [
   {
@@ -192,9 +192,8 @@ export default function Vaccellent() {
             </p>
           </Blockquote>
         </SectionHighlight>
-        <ProtectedContent soon />
       </Section>
-      <Section header="other projects">
+      <Section header="other projects" constrain>
         <div className="grid grid-cols-2 gap-6">
           <ProjectCard
             title="shui"

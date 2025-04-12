@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(webm|mp4)$/i,
+      type: "asset/resource",
+    });
 
-module.exports = nextConfig
+    return config;
+  },
+};
+
+module.exports = nextConfig;

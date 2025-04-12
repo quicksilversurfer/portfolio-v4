@@ -87,159 +87,282 @@ export default function UltrasoundDetails() {
     <>
       <div className="border-t border-base-200 dark:border-base-800 my-8"></div>
       <SectionHighlight
-        kicker="Industry Overview"
-        heading="Navigating the complexities of ultrasound imaging"
-        subHeading="This project involved diving deep into the world of ultrasound technology, understanding its applications, user groups, and evolving trends to inform the design of next-generation systems."
+        kicker="Project Impact"
+        heading="Redefining Ultrasound Usability for Medical Professionals"
+        subHeading="The next-generation ACUSON ultrasound systems represent a fundamental rethinking of how healthcare professionals interact with these critical diagnostic tools."
       >
+        {/* Launch and Recognition */}
+        <Block title="Transforming medical imaging">
+          <p>
+            Siemens Healthineers unveiled the ACUSON Sequoia ultrasound system
+            in 2018 at a launch event in Seattle. The system represented a
+            significant leap forward in medical imaging technology, with its
+            ability to image patients of virtually any body type—dramatically
+            demonstrated by successfully scanning a 600lb sumo wrestler. This
+            capability showcased key innovations including the Deep Abdominal
+            Transducer for superior tissue penetration and enhanced elastography
+            for detailed tissue characterization.
+          </p>
+          <p>
+            Beyond technical specifications, the system gained immediate
+            recognition for its thoughtfully designed user interface—the
+            culmination of our extensive research and human-centered design
+            process. Medical professionals particularly noted how the system
+            improved workflow efficiency while reducing physical strain during
+            extended scanning sessions.
+          </p>
+        </Block>
+
         <ImgContainer>
+          <div className="col-span-6">
+            <Media src={img_1} alt="Acuson Sequoia Ultrasound Machine"></Media>
+          </div>
+          <div className="col-span-6">
+            <Media
+              src={img_2}
+              alt="Healthcare professional using the Acuson Sequoia in a clinical setting"
+            ></Media>
+          </div>
+          <span className="col-span-12 text-sm text-base-600 dark:text-base-500 font-sans text-left mt-2">
+            Left: The ACUSON Sequoia system with its streamlined control panel
+            and dual-screen interface. Right: Clinical use showing the ergonomic
+            positioning designed to reduce sonographer strain | Image Credit:
+            Siemens Healthineers
+          </span>
+        </ImgContainer>
+
+        {/* Impact Metrics */}
+        <Block title="Validated excellence">
+          <p>
+            Through comprehensive research, user-centered design, and
+            cross-functional collaboration, we created interfaces that
+            dramatically improved the user experience—validated through
+            independent testing that showed:
+          </p>
+          <ul className="list-outside pl-4 space-y-4">
+            <li className="list-disc pl-2">
+              <b className="font-semibold">82% user preference</b> over
+              competing systems in direct comparisons
+            </li>
+            <li className="list-disc pl-2">
+              <b className="font-semibold">96% task success rate</b> in clinical
+              workflow scenarios
+            </li>
+            <li className="list-disc pl-2">
+              <b className="font-semibold">System Usability Score</b> in the
+              95th percentile, significantly outperforming industry standards
+            </li>
+            <li className="list-disc pl-2">
+              <b className="font-semibold">
+                Highest ease-of-use rating (4.54/5)
+              </b>{" "}
+              among all tested systems
+            </li>
+          </ul>
+        </Block>
+
+        <ImgContainer fullWidth>
+          <div className="col-span-6">
+            <Media
+              src={easiestImg}
+              alt="Chart showing ease of use ratings across systems"
+            ></Media>
+          </div>
+          <div className="col-span-6">
+            <Media
+              src={successImg}
+              alt="Chart showing task success rates across systems"
+            ></Media>
+          </div>
+          <div className="col-span-6">
+            <Media
+              src={usabilityImg}
+              alt="Chart showing System Usability Scale scores across systems"
+            ></Media>
+          </div>
+          <div className="col-span-6">
+            <Media
+              src={preferenceImg}
+              alt="Chart showing user preference percentages across systems"
+            ></Media>
+          </div>
+          <span className="col-span-12 text-sm text-base-600 dark:text-base-500 font-sans text-left mt-2">
+            Independent comparative usability study results showing ACUSON
+            Sequoia's performance (blue) versus competitors across multiple
+            metrics | Source: Siemens Healthineers / Macadamian Technologies
+          </span>
+        </ImgContainer>
+
+        <Block title="My role & contributions">
+          <p>
+            My involvement with Siemens Healthineers' ultrasound platform
+            evolution spanned from exploratory research to platform leadership:
+          </p>
+          <ul className="list-outside pl-4 space-y-4">
+            <li className="list-disc pl-2">
+              <b className="font-semibold">ACUSON Sequoia (Initial Phase):</b>{" "}
+              Contributing to foundational research and concept exploration that
+              established core design principles for the next-generation
+              platform
+            </li>
+            <li className="list-disc pl-2">
+              <b className="font-semibold">ACUSON Origin (Lead Designer):</b>{" "}
+              Full ownership of the design process for the cardiology-specific
+              system, including:
+              <ul className="list-outside pl-4 mt-2 space-y-2">
+                <li className="list-disc pl-2">
+                  Managing research programs across 12 sites in three countries
+                </li>
+                <li className="list-disc pl-2">
+                  Leading cross-functional teams with a €500,000+ budget
+                </li>
+                <li className="list-disc pl-2">
+                  Directing the interface evolution from concept to
+                  implementation
+                </li>
+                <li className="list-disc pl-2">
+                  Orchestrating harmonization efforts between platforms
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p className="mt-4">
+            This case study focuses primarily on my leadership of the ACUSON
+            Origin project while referencing the foundational work that made it
+            possible.
+          </p>
+        </Block>
+
+        <Block title="Building on success">
+          <p>
+            The lessons and design principles established during the Sequoia
+            development provided a solid foundation for the subsequent ACUSON
+            Origin system. Unveiled at the 2022 European Society of Cardiology
+            congress in Amsterdam, this dedicated cardiovascular ultrasound
+            system represented the culmination of our cardiology-focused
+            research and design work.
+          </p>
+        </Block>
+
+        <ImgContainer>
+          <div className="col-span-6">
+            <Media
+              src={img_3}
+              alt="Acuson Origin Ultrasound Machine showing the refined control panel and specialized cardiac visualization interface"
+            ></Media>
+          </div>
+          <div className="col-span-6">
+            <Media
+              src={img_4}
+              alt="Cardiologist using the Acuson Origin during a cardiac examination procedure"
+            ></Media>
+          </div>
+          <span className="col-span-12 text-sm text-base-600 dark:text-base-500 font-sans text-left mt-2">
+            The ACUSON Origin cardiovascular ultrasound system in clinical use,
+            showing specialized cardiology interface and workflow optimization |
+            Image Credit: Siemens Healthineers
+          </span>
+        </ImgContainer>
+      </SectionHighlight>
+      <SectionHighlight
+        kicker="Context & Challenge"
+        heading="Understanding the Complexities of Ultrasound Imaging"
+        subHeading="Ultrasound systems represent a unique intersection of advanced technology and critical healthcare needs, demanding thoughtful solutions that balance power with accessibility."
+      >
+        <ImgContainer fullWidth>
           <div className="col-span-12">
             <Media
               src={img_70}
               alt="Evolution of the Siemens Healthineers ultrasound systems"
-              caption="Evolution of the Siemens Healthineers ultrasound product line"
+              caption="Evolution of Siemens Healthineers ultrasound systems, showing increasing complexity over time"
             />
           </div>
         </ImgContainer>
 
-        <Block title="Technology & target domain">
+        <Block title="The Ultrasound Environment">
           <p>
-            <a
-              href="https://www.mayoclinic.org/tests-procedures/ultrasound/about/pac-20395177"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-style"
-            >
-              Ultrasound devices
-            </a>{" "}
-            stand as essential tools in modern medicine, providing clinicians
-            with real-time visualization of internal structures without
-            radiation or invasive procedures. Their versatility spans from
-            routine prenatal checkups to complex cardiac assessments, making
-            them indispensable across healthcare settings.
+            Ultrasound systems are essential diagnostic tools in modern
+            medicine, providing real-time visualization of internal structures
+            without radiation. Their use spans from routine prenatal checkups to
+            complex cardiac assessments, making them indispensable across
+            healthcare settings.
           </p>
           <p>
-            The primary users of these systems are sonographers—specialized
-            technicians who develop remarkable dexterity and spatial reasoning
-            skills through years of training. Regional variations in practice
-            emerge across different healthcare systems, with physicians in
-            Europe and Asia often operating the devices directly, while in North
-            America, the workflow typically involves sonographers capturing
-            images for physician interpretation.
-          </p>
-          <p>
-            What makes ultrasound particularly challenging from a design
-            perspective is its complex interaction model. Users must
-            simultaneously position a physical probe on a patient's body while
-            manipulating controls and interpreting real-time images. This
-            creates a distinctly demanding environment where cognitive load is
-            high and attention is divided across multiple focal points—the
-            control panel with its array of knobs and buttons, touchscreens
-            housing secondary functions, trackballs for navigation, and of
-            course, the main display showing the ultrasound image.
-          </p>
-          <p>
-            Within this field, two primary specializations shape how systems are
-            designed and used:
+            What makes these systems particularly challenging from a design
+            perspective is their complex interaction model:
           </p>
           <ul className="list-outside pl-4 space-y-4">
             <li className="list-disc pl-2">
-              <b className="font-semibold">General Imaging:</b> The more
-              widespread application, encompassing examinations of abdominal
-              organs, musculoskeletal structures, vascular systems, and
-              obstetrics. These systems require flexibility to accommodate
-              diverse imaging protocols while maintaining consistent usability
-              across varying contexts. The workflow often involves capturing
-              static images of relatively stable structures.
+              <b className="font-semibold">Split attention environments</b>{" "}
+              where users must simultaneously control the system while
+              manipulating a probe on patients
             </li>
             <li className="list-disc pl-2">
-              <b className="font-semibold">Cardiology:</b> A specialized domain
-              focused on the heart's intricate architecture and dynamic
-              function. These systems must address the unique challenge of
-              visualizing a rapidly moving organ with complex chambers and
-              valves. The workflow includes capturing both static images and
-              motion sequences (cine loops), requiring specialized controls and
-              analysis tools tailored to cardiac assessment.
+              <b className="font-semibold">High cognitive load tasks</b>{" "}
+              requiring real-time image interpretation and precise measurements
+            </li>
+            <li className="list-disc pl-2">
+              <b className="font-semibold">Diverse user expertise</b> ranging
+              from new technicians to 30-year veterans, each needing efficient
+              access to advanced capabilities
             </li>
           </ul>
-          <p>
-            Manufacturers typically develop distinct platforms for these
-            specializations, creating an interesting design challenge: how to
-            maintain consistency for healthcare facilities that use both types
-            while honoring the specialized needs of each domain. Understanding
-            these nuanced differences became fundamental to our approach,
-            allowing us to identify opportunities for standardization while
-            respecting the specialized workflows that had evolved in each field.
-          </p>
         </Block>
-      </SectionHighlight>
-      <SectionHighlight
-        kicker="Design Challenge"
-        heading="Enhancing usability and efficiency for a diverse user base"
-        subHeading="The project aimed to tackle key challenges in ultrasound usability, including simplifying complex interfaces, accommodating different user groups, and enabling seamless operation across devices."
-      >
-        <Block title="Design challenge">
+
+        <Block title="Two Distinct Domains">
           <p>
-            Creating next-generation ultrasound systems presented a multifaceted
-            challenge: how to advance the technical capabilities while making
-            them more accessible to a diverse range of healthcare professionals.
-            Beneath this broad objective lay several specific challenges that
-            shaped our approach:
+            The field is primarily divided into two specializations, each with
+            unique requirements:
           </p>
           <ul className="list-outside pl-4 space-y-4">
             <li className="list-disc pl-2">
-              <b className="font-semibold">
-                Improving ease of use and learnability:
-              </b>{" "}
-              The reality of healthcare facilities increasingly relying on
-              traveling sonographers meant our systems needed to support users
-              with varying backgrounds and experience levels. A novice
-              technician might encounter our system on their first day of a
-              short-term assignment, with limited time for training.
-              Simultaneously, the interface needed to satisfy experienced
-              professionals who demand efficient workflows and advanced
-              capabilities. This spectrum of expertise required thoughtful
-              progressive disclosure—making basic functions immediately clear
-              while allowing access to sophisticated features.
+              <b className="font-semibold">General Imaging:</b> Used for
+              examining stable structures like organs and vessels, requiring
+              flexibility across diverse protocols
             </li>
             <li className="list-disc pl-2">
-              <b className="font-semibold">
-                Standardizing and simplifying interfaces:
-              </b>{" "}
-              Previous generations of ultrasound systems had evolved
-              organically, often adding controls and features without
-              reconsidering the overall interface architecture. The result was
-              control panels with upwards of 70 physical buttons and complex
-              menu structures that buried important functions. Our challenge was
-              to rigorously evaluate which controls truly needed dedicated
-              physical presence, which could be contextually presented on a
-              touchscreen, and how to organize them in a way that matched users'
-              mental models of the examination process.
-            </li>
-            <li className="list-disc pl-2">
-              <b className="font-semibold">
-                Facilitating adaptability and seamless transitions:
-              </b>{" "}
-              Healthcare environments are rarely homogeneous—facilities often
-              operate multiple systems from different manufacturers and
-              generations. Our research revealed that sonographers might use
-              three different ultrasound systems in a single day, each with its
-              own interface logic. This context switching creates cognitive
-              burden and increases the potential for errors. We needed to create
-              interfaces that felt intuitive to users coming from competitor
-              systems while establishing a consistent pattern language that
-              could extend across our entire product line, reducing the learning
-              curve when transitioning between Siemens Healthineers devices.
+              <b className="font-semibold">Cardiology:</b> Specialized for
+              visualizing the constantly moving heart, demanding precise
+              controls for capturing both static and motion imagery
             </li>
           </ul>
-          <p>
-            These challenges were further complicated by the critical nature of
-            ultrasound examinations. Unlike consumer products where minor
-            usability issues might cause momentary frustration, in medical
-            contexts they can impact diagnostic accuracy and patient care. Every
-            design decision needed to balance innovation with reliability, and
-            simplicity with necessary depth of functionality.
-          </p>
         </Block>
+
+        <Block title="The Design Challenge">
+          <p>
+            Legacy ultrasound interfaces had evolved through decades of feature
+            accumulation, resulting in overwhelming complexity:
+          </p>
+          <ul className="list-outside pl-4 space-y-4">
+            <li className="list-disc pl-2">
+              Control panels with 70+ physical buttons
+            </li>
+            <li className="list-disc pl-2">
+              Inconsistent interaction models across features
+            </li>
+            <li className="list-disc pl-2">
+              Complex menu structures burying critical functions
+            </li>
+          </ul>
+          <p className="mt-4">
+            Our mission was to create next-generation systems that would:
+          </p>
+          <ul className="list-outside pl-4 space-y-4">
+            <li className="list-disc pl-2">
+              <b className="font-semibold">Improve usability</b> across all
+              experience levels while maintaining advanced capabilities
+            </li>
+            <li className="list-disc pl-2">
+              <b className="font-semibold">Simplify interactions</b> through
+              thoughtful organization of physical and digital controls
+            </li>
+            <li className="list-disc pl-2">
+              <b className="font-semibold">Enable seamless transitions</b>{" "}
+              between different systems and modalities
+            </li>
+          </ul>
+        </Block>
+
         <Blockquote>
           The brief from project management was deceptively straightforward:
           meet or beat competitor workflow, and significantly improve walk-up
@@ -249,275 +372,190 @@ export default function UltrasoundDetails() {
         </Blockquote>
       </SectionHighlight>
       <SectionHighlight
-        kicker="Design Process / ACUSON Sequoia"
-        heading="From concept to direction: Exploring the future of ultrasound interfaces"
-        subHeading="Early prototyping and user research helped define the design direction for the next-generation ACUSON Sequoia ultrasound platform, exploring both incremental improvements and radical redesigns."
+        kicker="Early Design Process / ACUSON Sequoia"
+        heading="Rethinking Ultrasound Interfaces from the Ground Up"
+        subHeading="My internship contribution to the ACUSON Sequoia focused on questioning core assumptions and exploring new interaction models through prototyping and user research."
       >
-        <Block title="Role & foundations">
+        <Block title="Setting New Directions">
           <p>
-            During my internship at Siemens Healthineers, I joined UX designers
-            Emin Sinani and Xinran Fan as they began the foundational work that
-            would shape the ACUSON Sequoia. Rather than simply inheriting
-            previous design patterns, the team approached this as an opportunity
-            to question fundamental assumptions about ultrasound interfaces and
-            how they might better serve users.
+            Working alongside UX designers Emin Sinani and Xinran Fan at Siemens
+            Healthineers, I helped explore fundamental changes to ultrasound
+            interfaces. Rather than iterating on existing designs, we questioned
+            basic assumptions about how these systems should work.
           </p>
-          <p>
-            My contributions centered on expanding the exploration space—helping
-            to develop and test a spectrum of design concepts ranging from
-            evolutionary refinements to more revolutionary approaches. Through
-            this process, we identified several key directions that would guide
-            the platform's development:
-          </p>
+          <p>Our exploration identified three key areas for innovation:</p>
           <ul className="list-outside pl-4 space-y-4">
             <li className="list-disc pl-2">
-              <b className="font-semibold">
-                Reducing control panel complexity:
-              </b>{" "}
-              Traditional ultrasound systems featured upwards of 70 physical
-              controls, creating a visually overwhelming interface for new
-              users. By carefully analyzing which functions truly needed
-              dedicated physical controls versus those that could be
-              contextually presented, we created concepts that significantly
-              streamlined the panel while preserving critical functionality.
+              <b className="font-semibold">Simplifying the control panel:</b>{" "}
+              Reducing 70+ physical controls by carefully determining which
+              functions needed dedicated buttons versus contextual digital
+              controls
             </li>
             <li className="list-disc pl-2">
-              <b className="font-semibold">
-                Reimagining the primary input device:
-              </b>{" "}
-              The trackball had been a staple of ultrasound systems for decades,
-              but came with maintenance challenges and an increasingly dated
-              feel. We developed prototypes using trackpads as an alternative,
-              hypothesizing that they might offer better cleanability in
-              clinical environments while providing a more contemporary
-              interaction model familiar to users of modern computing devices.
+              <b className="font-semibold">New input methods:</b> Investigating
+              trackpad alternatives to the traditional trackball, considering
+              factors like maintenance, precision, and familiarity
             </li>
             <li className="list-disc pl-2">
-              <b className="font-semibold">
-                Restructuring the information architecture:
-              </b>{" "}
-              Ultrasound systems had developed through accretion—new features
-              and modes added over time without reconsidering the overall
-              organization. By mapping existing controls, identifying logical
-              groupings, and testing different organizational schemas, we aimed
-              to create a more intuitive framework that would reduce cognitive
-              load during scanning procedures.
+              <b className="font-semibold">Logical organization:</b>{" "}
+              Restructuring the interface architecture to reduce cognitive load
+              by grouping related functions and establishing clear hierarchies
             </li>
           </ul>
         </Block>
-        <ImgContainer>
+
+        <ImgContainer fullWidth>
           <div className="col-span-12">
             <Media
               src={img_5}
               alt="Early concept exploration for the Acuson Sequoia"
-              caption="Early concept explorations showing various approaches to control panel layout and input device placement"
+              caption="Early explorations of control panel layouts and input device placement"
             />
           </div>
         </ImgContainer>
 
-        <Block title="Bringing concepts to life">
+        <Block title="Prototype Development">
           <p>
-            To move beyond theoretical concepts and gather meaningful user
-            feedback, we needed to create experiences that sonographers could
-            actually interact with. I contributed to developing functional
-            prototypes using Flash, Processing, and Java—each technology
-            offering different fidelity levels and interaction possibilities.
-          </p>
-          <p>
-            These weren't simply visual mockups but interactive systems that
-            simulated key workflows and allowed users to experience different
-            interaction models firsthand. By observing sonographers interact
-            with these prototypes and gathering their structured feedback, we
-            could identify which concepts resonated with their mental models and
-            work patterns, providing concrete evidence to inform design
-            decisions.
+            I helped create interactive prototypes using Flash, Processing, and
+            Java that allowed sonographers to experience our concepts firsthand.
+            These working prototypes simulated key workflows and gathered
+            structured feedback on different interaction models.
           </p>
         </Block>
-        <ImgContainer>
+
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_6}
-              alt="Prototype of early concepts for Acuson Sequioa"
+              alt="Interactive prototype of control panel concepts"
             ></Media>
           </div>
           <div className="col-span-6">
-            <Media
-              src={img_7}
-              alt="Software architecture for early prototypes of Acuson Sequioa"
-            ></Media>
+            <Media src={img_7} alt="Technical framework for prototypes"></Media>
           </div>
           <span className="col-span-12 text-sm text-base-600 dark:text-base-500 font-sans text-left mt-2">
-            Left: Interactive prototype demonstrating control panel concepts.
-            Right: Software architecture diagram showing the technical framework
-            supporting our prototypes.
+            Left: Interactive control panel prototype. Right: Technical
+            architecture supporting our prototypes
           </span>
         </ImgContainer>
-        <Block title="Balancing innovation with familiarity">
+
+        <Block title="Finding the Right Balance">
           <p>
-            The user evaluations revealed interesting tensions between
-            innovation and continuity. While sonographers consistently supported
-            reducing the number of physical controls, preferences varied
-            regarding how radically to reimagine the interface. This led to
-            thoughtful discussions about balancing novel approaches with the
-            realities of clinical environments where training time is limited
-            and workflow disruptions can impact patient care.
-          </p>
-          <p>
-            The trackpad concept exemplified this tension. Though some users
-            appreciated its modern feel and potential hygiene benefits, others
-            expressed concerns about precision for measurements and adaptability
-            for sonographers with decades of trackball experience. This mixed
-            feedback highlighted the importance of rigorous validation before
-            committing to such a fundamental change in the interaction model—a
-            theme that would continue through later development phases.
+            User testing revealed a crucial tension: while sonographers wanted
+            simplified interfaces, they were cautious about dramatic changes
+            that could disrupt established workflows. The trackpad versus
+            trackball debate exemplified this challenge—modern design versus
+            proven precision and familiarity.
           </p>
         </Block>
-        <ImgContainer>
+
+        <ImgContainer fullWidth>
           <div className="col-span-12">
             <Media
               src={img_8}
-              alt="Concept evaluations for the Acuson Sequoia"
-              caption="User evaluation sessions providing feedback on various control panel concepts and interaction models"
+              alt="User evaluation sessions"
+              caption="Sonographers providing feedback on various interface concepts"
             />
           </div>
         </ImgContainer>
 
-        <Blockquote>
-          Exploration is about creating a map of possibilities before choosing a
-          path. These early phases weren't just about finding the right
-          answers—they were about asking better questions and challenging
-          assumptions that had been embedded in ultrasound design for
-          generations.
-        </Blockquote>
-        <Block title="Creating a coherent framework">
+        <Block title="Building a Sustainable Framework">
           <p>
-            Beyond individual controls and input devices, we needed to address
-            the underlying system organization. I worked on analyzing and
-            mapping the complex information architecture—identifying patterns,
-            redundancies, and opportunities for simplification. This involved
-            categorizing functions based on frequency of use, workflow stage,
-            and logical relationships.
-          </p>
-          <p>
-            By exploring different interface paradigms—from toggle buttons to
-            contextual menus to stepped controls—we developed a framework that
-            would guide the organization of functions across both hardware and
-            software interfaces. This foundational work established principles
-            that would inform not just the Sequoia platform but subsequent
-            systems as well, creating a more consistent and intuitive experience
-            across the product line.
+            Beyond individual features, we developed a comprehensive
+            organization system for ultrasound controls based on usage patterns
+            and workflow stages. This framework would later guide both the
+            Sequoia platform and future systems, ensuring consistency across the
+            product line.
           </p>
           <ImgContainer>
             <div className="col-span-12">
               <Media
                 src={sequoiaImg}
-                alt="Acuson Sequoia Ultrasound Machine"
-                caption="The final ACUSON Sequoia system, reflecting the evolution from early concepts to refined product"
+                alt="Final ACUSON Sequoia system"
+                caption="The finished ACUSON Sequoia, embodying our new design principles"
               />
             </div>
           </ImgContainer>
         </Block>
+
+        <Blockquote>
+          By questioning fundamental assumptions before jumping to solutions, we
+          uncovered deeper issues that might have been missed with a more
+          incremental approach. This foundation-up rethinking proved essential
+          for true innovation.
+        </Blockquote>
       </SectionHighlight>
       <SectionHighlight
         kicker="Design Process / ACUSON Origin"
         heading="Leading the design of ACUSON Origin for Cardiology"
-        subHeading="Taking on the challenge of leading design for the ACUSON Origin involved strategic planning, extensive user research, and fostering collaboration across diverse teams to deliver a user-centered cardiology ultrasound system."
+        subHeading="Taking leadership of the ACUSON Origin project required strategic planning and deep collaboration to transform a legacy cardiology system into a modern, user-centered platform."
       >
         <ImgContainer>
           <div className="col-span-12">
             <Media
               src={img_70}
-              alt="ACUSON Origin is the successor to the SC2000 PRIME ultrasound system for Cardiology"
-              caption="ACUSON Origin is the successor to the SC2000 PRIME ultrasound system for Cardiology"
+              alt="ACUSON Origin ultrasound system in context of other Siemens Healthineers systems"
+              caption="The ACUSON Origin cardiovascular ultrasound system was an evolution of the ACUSON Sequoia, adapted for cardiology"
             />
           </div>
         </ImgContainer>
-        <Block title="Project scope & challenges">
+
+        <Block title="Project scope">
           <p>
-            As the Sequoia project progressed, I was entrusted with the
-            responsibility of leading the design of the ACUSON Origin, the
-            cardiology-specific ultrasound device (a successor to the SC2000
-            PRIME ultrasound system).
-          </p>
-          <p>
-            This presented an exciting opportunity to drive the transformation
-            of a critical medical device, but also came with the immense
-            challenge of completing the redesign and testing within a tight
-            timeframe of 1.5 years and a budget exceeding $500,000.
-          </p>
-          <p>
-            One of the key hurdles was the need to "leapfrog" a generation,
-            transitioning from a legacy system without a touchscreen interface
-            to a modern, partially digital platform. This required us to re-map
-            the entire hardware control panel feature set onto a new interaction
-            framework.
-          </p>
-        </Block>
-        <Block title="Strategic planning & collaboration">
-          <p>
-            In my role as project lead, I was responsible for defining project
-            timelines, managing budgets, planning and conducting user research,
-            coordinating cross-functional teams, and overseeing the execution of
-            the project from start to finish.
-          </p>
-          <p>
-            To tackle this complex undertaking, I implemented a highly iterative
-            approach that involved simultaneous discovery and definition phases.
-            This allowed us to leverage existing knowledge about cardiology
-            workflows from previous research, utilize control panel frameworks
-            established during the Sequoia project, and incorporate both concept
-            evaluations and contextual inquiries into each iteration.
-          </p>
-          <p>
-            Collaboration was key to the success of this project. We worked
-            closely with various teams and stakeholders throughout the process,
-            including:
+            As the Sequoia project progressed, I was asked to lead the design of
+            ACUSON Origin, a specialized cardiology ultrasound system. The
+            project presented two key challenges:
           </p>
           <ul className="list-outside pl-4 space-y-4">
             <li className="list-disc pl-2">
-              <b className="font-semibold">
-                Engineering and Human Factors teams:
-              </b>{" "}
-              These teams were instrumental in developing prototypes and
-              refining designs based on user feedback and technical feasibility.
+              <b className="font-semibold">Ambitious timeline and scale:</b>{" "}
+              Completing a full redesign within 1.5 years with a €500,000+
+              budget
             </li>
             <li className="list-disc pl-2">
-              <b className="font-semibold">
-                Cardiology subject matter experts:
-              </b>{" "}
-              Their expertise ensured that the new system met the specific
-              clinical requirements and workflows of cardiologists.
-            </li>
-            <li className="list-disc pl-2">
-              <b className="font-semibold">Cross-functional stakeholders:</b>{" "}
-              Regular communication and alignment with stakeholders from various
-              departments, such as product management, marketing, and clinical
-              applications, were crucial for maintaining project focus and
-              achieving project goals.
+              <b className="font-semibold">Technical transformation:</b>{" "}
+              Transitioning from a legacy system to a modern platform with touch
+              interfaces while preserving critical workflows
             </li>
           </ul>
+        </Block>
+
+        <Block title="Leadership approach">
           <p>
-            By fostering open communication, encouraging collaboration, and
-            maintaining a clear focus on user needs, we were able to navigate
-            the complexities of the project and deliver a redesigned Cardiology
-            device that met the highest standards of usability, functionality,
-            and clinical efficacy.
+            As project lead, I implemented an iterative design process that
+            balanced innovation with practical constraints:
           </p>
+          <ul className="list-outside pl-4 space-y-4">
+            <li className="list-disc pl-2">
+              <b className="font-semibold">Parallel workflows:</b> Running
+              discovery and definition phases simultaneously to accelerate
+              development
+            </li>
+            <li className="list-disc pl-2">
+              <b className="font-semibold">Knowledge integration:</b> Leveraging
+              insights from Sequoia while addressing cardiology-specific needs
+            </li>
+            <li className="list-disc pl-2">
+              <b className="font-semibold">Cross-functional collaboration:</b>{" "}
+              Coordinating teams across engineering, human factors, clinical
+              expertise, and product management
+            </li>
+          </ul>
           <ImgContainer>
             <div className="col-span-12">
               <Media
                 src={img_9}
-                alt="Research phase planning and timelines for the Acuson Origin"
-                caption="Research phase planning and timelines for the Acuson Origin"
+                alt="Project timeline and planning"
+                caption="Research and development timeline showing key milestones and parallel workstreams"
               />
             </div>
           </ImgContainer>
         </Block>
+
         <Blockquote>
-          Leading the ACUSON Origin redesign was an incredible learning
-          experience. It highlighted the importance of strategic planning,
-          adaptability, and building strong relationships with cross-functional
-          teams to achieve a common goal.
+          Leading the ACUSON Origin redesign taught me how strategic planning
+          and strong cross-functional relationships enable complex healthcare
+          innovations to succeed.
         </Blockquote>
       </SectionHighlight>
       <SectionHighlight
@@ -549,7 +587,7 @@ export default function UltrasoundDetails() {
           </ul>
         </Block>
 
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_10}
@@ -585,7 +623,7 @@ export default function UltrasoundDetails() {
             </li>
           </ul>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_12}
@@ -619,7 +657,7 @@ export default function UltrasoundDetails() {
             </li>
           </ul>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_14}
@@ -697,7 +735,7 @@ export default function UltrasoundDetails() {
             </li>
           </ul>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_16}
@@ -748,7 +786,7 @@ export default function UltrasoundDetails() {
             how any new system would be received in the market.
           </p>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_20}
@@ -790,7 +828,7 @@ export default function UltrasoundDetails() {
       </SectionHighlight>
       <SectionHighlight
         kicker="Design process / Acuson Origin"
-        heading="Primary research: Testing with practitioners across cultures"
+        heading="Primary research: Testing with practitioners across regions"
         subHeading="Our international primary research program engaged over 30 cardiology professionals across three continents, combining structured evaluations with contextual observations to validate concepts and discover unmet needs in real clinical settings."
       >
         <Block title="Designing a global research framework">
@@ -906,7 +944,7 @@ export default function UltrasoundDetails() {
             decision.
           </p>
         </Block>
-        <ImgContainer className="grid grid-cols-12 gap-x-2 pb-0">
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_25}
@@ -971,7 +1009,7 @@ export default function UltrasoundDetails() {
             </li>
           </ul>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-4">
             <Media
               src={img_27}
@@ -1020,7 +1058,7 @@ export default function UltrasoundDetails() {
             trackpads were less common in clinical environments.
           </p>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_30}
@@ -1077,12 +1115,11 @@ export default function UltrasoundDetails() {
           </p>
         </Block>
         <Blockquote>
-          Good design requires the courage to test our own assumptions and
-          change direction when the evidence demands it. What began as a
-          question about a single interface component ultimately revealed deeper
-          insights about the nature of precision work in cardiology—insights
-          that shaped not just this product but our approach to medical device
-          design more broadly.
+          The trackpad study taught me that evidence must trump assumptions,
+          even when it means reversing course on established decisions. This
+          wasn't just about an input device—it revealed fundamental patterns
+          about precision work in cardiology that influenced our entire design
+          approach.
         </Blockquote>
       </SectionHighlight>
       <SectionHighlight
@@ -1129,7 +1166,7 @@ export default function UltrasoundDetails() {
             </li>
           </ul>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_34}
@@ -1215,7 +1252,7 @@ export default function UltrasoundDetails() {
             </li>
           </ul>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_39}
@@ -1296,7 +1333,7 @@ export default function UltrasoundDetails() {
           </p>
         </Block>
 
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_44}
@@ -1390,7 +1427,7 @@ export default function UltrasoundDetails() {
           </p>
         </Block>
 
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_48}
@@ -1461,7 +1498,7 @@ export default function UltrasoundDetails() {
             models cardiologists had developed through years of practice.
           </p>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_51}
@@ -1527,7 +1564,7 @@ export default function UltrasoundDetails() {
           </p>
         </Block>
 
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media src={img_55} alt="SC2000 Prime monitor UI"></Media>
           </div>
@@ -1541,7 +1578,7 @@ export default function UltrasoundDetails() {
           </span>
         </ImgContainer>
 
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_57}
@@ -1590,7 +1627,7 @@ export default function UltrasoundDetails() {
           </p>
         </Block>
 
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-12">
             <Media
               src={img_61}
@@ -1645,7 +1682,7 @@ export default function UltrasoundDetails() {
           </p>
         </Block>
 
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_62}
@@ -1665,7 +1702,7 @@ export default function UltrasoundDetails() {
           </span>
         </ImgContainer>
 
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-6">
             <Media
               src={img_64}
@@ -1685,12 +1722,11 @@ export default function UltrasoundDetails() {
         </ImgContainer>
 
         <Blockquote>
-          The true value of our design system went beyond visual consistency. By
-          creating a unified interaction language across different machines, we
-          had reduced cognitive overhead for clinicians, allowing them to focus
-          on patients rather than interfaces. These moments of real-world impact
-          always remind me why thoughtful system design matters beyond
-          aesthetics.
+          When a sonographer told us they could move between our systems without
+          thinking about the interface, I knew we'd succeeded. The value wasn't
+          in visual consistency—it was in removing cognitive friction so
+          clinicians could focus entirely on their patients instead of the
+          technology.
         </Blockquote>
       </SectionHighlight>
       <SectionHighlight
@@ -1788,7 +1824,7 @@ export default function UltrasoundDetails() {
             industry averages for comparable systems.
           </p>
         </Block>
-        <ImgContainer>
+        <ImgContainer fullWidth>
           <div className="col-span-4">
             <Media
               src={img_67}
@@ -1851,173 +1887,6 @@ export default function UltrasoundDetails() {
           finding opportunities to reduce friction and complexity. It's not
           about technological novelty, but about understanding the deeper
           patterns of how people work and making those patterns more fluid.
-        </Blockquote>
-      </SectionHighlight>
-      <SectionHighlight
-        kicker="Outcomes & Impact"
-        heading="Launch and Recognition: A New Era of Ultrasound Imaging"
-        subHeading="Years of research, design, and technical innovation culminated in two groundbreaking ultrasound systems that redefined industry expectations for usability and clinical performance."
-      >
-        <Block title="ACUSON Sequoia: Setting new standards">
-          <p>
-            Siemens Healthineers unveiled the ACUSON Sequoia ultrasound system
-            in 2018 at a launch event in Seattle. The system represented a
-            significant leap forward in medical imaging technology, with its
-            ability to image patients of virtually any body type—dramatically
-            demonstrated by successfully scanning a 600lb sumo wrestler. This
-            capability showcased key innovations including the Deep Abdominal
-            Transducer for superior tissue penetration and enhanced elastography
-            for detailed tissue characterization.
-          </p>
-          <p>
-            Beyond technical specifications, the system gained immediate
-            recognition for its thoughtfully designed user interface—the
-            culmination of our extensive research and human-centered design
-            process. Medical professionals particularly noted how the system
-            improved workflow efficiency while reducing physical strain during
-            extended scanning sessions.
-          </p>
-        </Block>
-        <ImgContainer>
-          <div className="col-span-6">
-            <Media src={img_1} alt="Acuson Sequoia Ultrasound Machine"></Media>
-          </div>
-          <div className="col-span-6">
-            <Media
-              src={img_2}
-              alt="Healthcare professional using the Acuson Sequoia in a clinical setting"
-            ></Media>
-          </div>
-          <span className="col-span-12 text-sm text-base-600 dark:text-base-500 font-sans text-left mt-2">
-            Left: The ACUSON Sequoia system with its streamlined control panel
-            and dual-screen interface. Right: Clinical use showing the ergonomic
-            positioning designed to reduce sonographer strain | Image Credit:
-            Siemens Healthineers
-          </span>
-        </ImgContainer>
-        <Block title="Validated excellence through independent testing">
-          <p>
-            While internal feedback was encouraging, we wanted objective
-            validation of our design decisions. The product team commissioned a
-            third-party organization to conduct a comprehensive comparative
-            usability study against leading competitor systems. The results
-            exceeded even our optimistic expectations:
-          </p>
-          <ul className="list-outside pl-4 space-y-4">
-            <li className="list-disc pl-2">
-              <b className="font-semibold">Superior ease of use:</b> Users rated
-              the ACUSON Sequoia 4.54 out of 5 for ease of use—the highest score
-              among all tested systems and significantly above the industry
-              average of 3.7.
-            </li>
-            <li className="list-disc pl-2">
-              <b className="font-semibold">Exceptional task completion: </b>{" "}
-              Participants achieved a 96% task success rate, demonstrating that
-              our design effectively supported clinical workflows without
-              confusion or unnecessary complexity.
-            </li>
-            <li className="list-disc pl-2">
-              <b className="font-semibold">Top-tier usability metrics:</b> The
-              system earned a System Usability Scale score in the 95th
-              percentile—placing it in the "excellent" category by established
-              usability standards and outperforming all competing devices.
-            </li>
-            <li className="list-disc pl-2">
-              <b className="font-semibold">Overwhelming preference:</b> Most
-              tellingly, 82% of participating sonographers preferred the ACUSON
-              Sequoia over competitor devices when given a direct choice—a
-              remarkable achievement in a market with established user
-              loyalties.
-            </li>
-          </ul>
-          <p>
-            The qualitative feedback proved equally validating. Study
-            participants spontaneously applauded after completing certain
-            workflows, with several commenting that the system felt "designed by
-            someone who actually understands how we work." This response
-            affirmed our fundamental design philosophy—that deep understanding
-            of user context must drive every design decision.
-          </p>
-        </Block>
-        <ImgContainer>
-          <div className="col-span-6">
-            <Media
-              src={easiestImg}
-              alt="Chart showing ease of use ratings across systems"
-            ></Media>
-          </div>
-          <div className="col-span-6">
-            <Media
-              src={successImg}
-              alt="Chart showing task success rates across systems"
-            ></Media>
-          </div>
-          <div className="col-span-6">
-            <Media
-              src={usabilityImg}
-              alt="Chart showing System Usability Scale scores across systems"
-            ></Media>
-          </div>
-          <div className="col-span-6">
-            <Media
-              src={preferenceImg}
-              alt="Chart showing user preference percentages across systems"
-            ></Media>
-          </div>
-          <span className="col-span-12 text-sm text-base-600 dark:text-base-500 font-sans text-left mt-2">
-            Independent comparative usability study results showing ACUSON
-            Sequoia's performance (blue) versus competitors across multiple
-            metrics | Source: Siemens Healthineers / Macadamian Technologies
-          </span>
-        </ImgContainer>
-        <Block title="ACUSON Origin: Building on success">
-          <p>
-            The lessons and design principles established during the Sequoia
-            development provided a solid foundation for the subsequent ACUSON
-            Origin system. Unveiled at the 2022 European Society of Cardiology
-            congress in Amsterdam, this dedicated cardiovascular ultrasound
-            system represented the culmination of our cardiology-focused
-            research and design work.
-          </p>
-          <p>
-            The Origin integrated AI capabilities with the refined user
-            interface we had developed, creating a system specifically optimized
-            for the cardiovascular care continuum. Its specialization allowed
-            for enhanced support across the spectrum of cardiac procedures—from
-            diagnostics to structural heart interventions and electrophysiology.
-            The medical community's response validated our approach to platform
-            harmonization, with cardiologists noting how easily they could
-            transition between Sequoia and Origin systems while maintaining
-            their efficiency.
-          </p>
-        </Block>
-        <ImgContainer>
-          <div className="col-span-6">
-            <Media
-              src={img_3}
-              alt="Acuson Origin Ultrasound Machine showing the refined control panel and specialized cardiac visualization interface"
-            ></Media>
-          </div>
-          <div className="col-span-6">
-            <Media
-              src={img_4}
-              alt="Cardiologist using the Acuson Origin during a cardiac examination procedure"
-            ></Media>
-          </div>
-          <span className="col-span-12 text-sm text-base-600 dark:text-base-500 font-sans text-left mt-2">
-            The ACUSON Origin cardiovascular ultrasound system, showing
-            specialized cardiology interface and clinical application | Image
-            Credit: Siemens Healthineers
-          </span>
-        </ImgContainer>
-        <Blockquote>
-          The validation studies confirmed what we hoped to achieve with these
-          systems. Beyond the metrics and market success, it was particularly
-          rewarding to hear from clinicians about how the interfaces actually
-          improved their daily practice—reducing fatigue during long procedures
-          and letting them focus more on patients than on operating the
-          equipment. These real-world outcomes underscore the value of our
-          research-driven approach to medical device design.
         </Blockquote>
       </SectionHighlight>
       <SectionHighlight

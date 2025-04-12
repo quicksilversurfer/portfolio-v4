@@ -7,12 +7,12 @@ import Blockquote from "@/components/Blockquote";
 import ProjectCard from "@/components/ProjectCard";
 import SectionHighlight from "@/components/SectionHighlight";
 import ImgContainer from "@/components/ImgContainer";
-import ProtectedContent from "@/components/ProtectedContent";
+import ProtectedInput from "@/components/ProtectedInput";
 
 // images
 import useCases from "@/public/images/shui/shui_use_cases.png";
-import ultrasoundCover from "@/public/images/ultrasound/ultrasound_cover.jpg";
-import vaccellentCover from "@/public/images/tva/vaccellent_cover.jpg";
+import ultrasoundCover from "@/public/images/ultrasound/ultrasound_home_cover.png";
+import vaccellentCover from "@/public/images/tva/vaccellent_home_cover.png";
 
 const shuiDetails = [
   {
@@ -137,8 +137,9 @@ export default function Shui() {
             </p>
           </Block>
         </SectionHighlight>
-        <ProtectedContent soon />
+        <ProtectedInput />
       </Section>
+
       <Section header="other projects" constrain>
         <div className="grid grid-cols-2 gap-6">
           <ProjectCard

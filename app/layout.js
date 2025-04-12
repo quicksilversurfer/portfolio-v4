@@ -48,7 +48,7 @@ const garamond = EB_Garamond({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ scrollBehavior: "auto" }}>
       <head></head>
       <CSPostHogProvider>
         <body

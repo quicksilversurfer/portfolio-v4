@@ -3,10 +3,10 @@ import Cover from "@/components/Cover";
 import Section from "@/components/Section";
 import ProjectCard from "@/components/ProjectCard";
 // images
-import shuiCover from "@/public/images/shui/shui_cover.jpeg";
+import shuiCover from "@/public/images/shui/shui_home_cover.png";
 import awsCover from "@/public/images/aws/aws.jpg";
-import ultrasoundCover from "@/public/images/ultrasound/ultrasound_cover.jpg";
-import vaccellentCover from "@/public/images/tva/vaccellent_cover.jpg";
+import ultrasoundCover from "@/public/images/ultrasound/ultrasound_home_cover.png";
+import vaccellentCover from "@/public/images/tva/vaccellent_home_cover.png";
 import cscwCover from "@/public/images/personal/cscw.png";
 import d3Cover from "@/public/images/personal/d3people.png";
 import rssCover from "@/public/images/personal/rss-reader_cover.png";
@@ -73,7 +73,7 @@ export default function Home() {
           image={hciCover}
           link="https://hci-ai-index.vercel.app/"
         />
-        <div className="sm:grid grid-cols-3 gap-6">
+        <div className="sm:grid grid-cols-2 gap-6">
           <ProjectCard
             title="cscw 2019"
             description="an article recounting my experience at CSCW 2019"
@@ -85,12 +85,6 @@ export default function Home() {
             description="a d3 network graph visualizing connections between people in a community of practice"
             image={d3Cover}
             link="https://quicksilversurfer.github.io/1000-people/"
-          />
-          <ProjectCard
-            title="rss reader"
-            description="a svelte app to read through some design & technology blogs"
-            image={rssCover}
-            link="https://github.com/quicksilversurfer/rss-reader"
           />
         </div>
       </Section>
