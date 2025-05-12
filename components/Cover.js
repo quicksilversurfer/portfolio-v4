@@ -101,10 +101,10 @@ export default function Cover({ heading, description }) {
                   This approach has led to meaningful outcomes: award-winning
                   medical interfaces that streamline clinical work and AI
                   platforms that weave scattered feedback into coherent
-                  narratives. I'm drawn to these spaces where small interactions
-                  connect to larger systems—crafting experiences where{" "}
-                  <em>purpose steps forward and technology recedes</em>. When
-                  done thoughtfully, human intention can flow uninterrupted
+                  narratives. I&apos;m drawn to these spaces where small
+                  interactions connect to larger systems—crafting experiences
+                  where <em>purpose steps forward and technology recedes</em>.
+                  When done thoughtfully, human intention can flow uninterrupted
                   through carefully designed pathways.
                 </p>
               </div>
