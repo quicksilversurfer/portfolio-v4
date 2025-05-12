@@ -211,7 +211,6 @@ export default function ShuiDetails() {
         </Blockquote>
       </SectionHighlight>
 
-      {/* BOTTOM OF THE PYRAMID: Provide additional clarity */}
       <SectionHighlight
         kicker="Implementation Process"
         heading="From Research to Adoption"

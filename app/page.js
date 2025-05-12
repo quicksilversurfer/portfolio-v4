@@ -4,12 +4,12 @@ import Section from "@/components/Section";
 import ProjectCard from "@/components/ProjectCard";
 // images
 import shuiCover from "@/public/images/shui/shui_home_cover.png";
-import awsCover from "@/public/images/aws/aws.jpg";
+import awsCover from "@/public/images/aws/aws_cover.png";
+import luminaCover from "@/public/images/aws/lumina/lumina_cover.png";
 import ultrasoundCover from "@/public/images/ultrasound/ultrasound_home_cover.png";
 import vaccellentCover from "@/public/images/tva/vaccellent_home_cover.png";
 import cscwCover from "@/public/images/personal/cscw.png";
 import d3Cover from "@/public/images/personal/d3people.png";
-import rssCover from "@/public/images/personal/rss-reader_cover.png";
 import hciCover from "@/public/images/hciindex/cover.png";
 import rasabhoomiCover from "@/public/images/rasabhoomi/og.png";
 
@@ -17,14 +17,20 @@ export default function Home() {
   return (
     <>
       <Cover
-        heading="Hi, I'm Prateek"
-        description="I am an interaction designer at AWS, where I design tools for modern data infrastructures"
+        heading="Hi, I'm Prateek."
+        description="I am an interaction designer at AWS, where I design tools for modern data infrastructures."
       />
       <Section
         header="work"
         title="At AWS, I help build tools that empower businesses to manage their data with ease and efficiency."
         constrain
       >
+        <ProjectCard
+          title="Lumina"
+          description="ai-powered customer insights for data-driven product decisions"
+          image={luminaCover}
+          link="/lumina"
+        />
         <ProjectCard
           title="AWS"
           description="tools to build and manage modern data infrastructures"

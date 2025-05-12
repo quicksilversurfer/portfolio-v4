@@ -26,17 +26,17 @@ const ErrorDisplay = ({ message, onClose }) => (
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -5 }}
     transition={{ duration: 0.3 }}
-    className="mt-2 p-3 rounded-md bg-red-50 border border-red-200 text-red-600 dark:bg-red-900/30 dark:border-red-800 dark:text-red-300 relative"
+    className="mt-2 mr-auto w-fit p-3 rounded-md bg-red-50 border border-red-200 text-red-600 dark:bg-red-900/30 dark:border-red-800 dark:text-red-300 relative flex items-center"
     role="alert"
   >
+    <p className="pr-7">{message}</p>
     <button
       onClick={onClose}
-      className="absolute right-2 top-2 text-red-500 hover:text-red-700 dark:text-red-300 dark:hover:text-red-100"
+      className="absolute right-3 top-1/2 transform -translate-y-1/2 text-red-500 hover:text-red-700 dark:text-red-300 dark:hover:text-red-100 ml-2"
       aria-label="Dismiss error"
     >
       ✕
     </button>
-    <p>{message}</p>
   </motion.div>
 );
 

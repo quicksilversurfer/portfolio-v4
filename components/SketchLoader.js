@@ -6,6 +6,7 @@ import PtsUltrasound from "./sketches/ptsUltrasound";
 import PtsVaccellent from "./sketches/ptsVaccellent";
 import PtsBlog from "./sketches/ptsBlog";
 import PtsAWS from "./sketches/PtsAWS";
+import PtsLumina from "./sketches/PtsLumina";
 
 const SketchWrapper = () => {
   const pathname = usePathname();
@@ -30,6 +31,9 @@ const SketchWrapper = () => {
         break;
       case "/aws":
         SketchComponent = PtsAWS;
+        break;
+      case "/lumina":
+        SketchComponent = PtsLumina;
         break;
       default:
         // Optionally, you can have a default sketch or leave it null

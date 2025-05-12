@@ -26,7 +26,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["var(--font-public)", ...defaultTheme.fontFamily.sans],
-      serif: ["var(--font-sentient)", ...defaultTheme.fontFamily.serif],
+      serif: ["var(--font-garamond)", ...defaultTheme.fontFamily.serif],
     },
     colors: {
       base: {

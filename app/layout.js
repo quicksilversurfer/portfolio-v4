@@ -1,5 +1,5 @@
 import localfont from "next/font/local";
-import { EB_Garamond } from "next/font/google";
+import { EB_Garamond, Fanwood_Text, Joan } from "next/font/google";
 import clsx from "clsx";
 import "./globals.css";
 import { CSPostHogProvider } from "./providers";
@@ -46,6 +46,20 @@ const garamond = EB_Garamond({
   variable: "--font-garamond",
 });
 
+const fanwood = Fanwood_Text({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-fanwood",
+});
+
+const joan = Joan({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-joan",
+});
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ scrollBehavior: "auto" }}>
@@ -57,7 +71,9 @@ export default function RootLayout({ children }) {
             crimson.variable,
             publicsans.variable,
             garamond.variable,
-            sentient.variable
+            sentient.variable,
+            fanwood.variable,
+            joan.variable
           )}
         >
           <Providers>

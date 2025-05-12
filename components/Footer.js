@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col sm:flex-row justify-between mb-12 max-w-screen-lg mx-auto">
+    <div className="flex flex-col sm:flex-row justify-between mb-12 max-w-screen-lg mx-auto ">
       <ul className="flex flex-col sm:flex-row text-base font-sans space-y-2 sm:space-y-0">
         <li className="sm:mr-2">
           <a

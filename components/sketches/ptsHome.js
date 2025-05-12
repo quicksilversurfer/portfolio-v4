@@ -38,14 +38,14 @@ class Bird {
     const sineValue = Math.sin(this.angle);
     this.position.y += sineValue * 0.015 * this.depth;
     if (Math.random() < 0.02) {
-      this.velocity.y += (Math.random() - 0.5) * 0.15;
+      this.velocity.y += (Math.random() - 0.8) * 0.4;
     }
     this.wingAngle += this.wingSpeed;
     if (this.wingAngle > Const.two_pi) {
       this.wingAngle -= Const.two_pi;
     }
     const wingFlap = Math.sin(this.wingAngle) * this.wingRange;
-    this.position.y += wingFlap * this.depth * 0.3;
+    this.position.y += wingFlap * this.depth * 0.2;
 
     // --- Boundary Checks ---
     if (this.position.x > space.width + BOUNDARY_BUFFER) {
@@ -70,43 +70,41 @@ class Bird {
   }
 
   display(form) {
-    const scale = this.depth * 3.0;
+    const scale = this.depth * 5.0; // Increased scale multiplier from 4.0 to 5.0
     const alpha = Math.max(0.2, Math.min(1.0, this.depth * 0.9));
     const birdColor = `rgba(${this.rgbColor},${alpha})`;
-    const wingStrokeWidth = Math.max(1, this.depth);
 
+    // Body (side view, oriented left to right, with adjusted third triangle)
     const bodyPoints = [
-      new Pt(-0.6 * scale, 0.1 * scale),
-      new Pt(0, -0.2 * scale),
-      new Pt(-0.6 * scale, -0.1 * scale),
-    ].map((p) => p.$add(this.position));
+      this.position.$add(0.8 * scale, -0.2 * scale),
+      this.position.$add(0.8 * scale, 0),
+      this.position.$add(-0.12 * scale, 0.4 * scale),
+    ];
     form.fillOnly(birdColor).polygon(bodyPoints);
 
-    const leftWingStart = this.position.$add(-0.2 * scale, 0);
-    const leftWingControl = this.position.$add(
-      -0.5 * scale,
-      (this.leftWingCurve - 0.2) * scale
-    );
-    const leftWingEnd = this.position.$add(
-      -0.8 * scale,
-      this.leftWingCurve * scale * 1.1
-    );
-    form
-      .strokeOnly(birdColor, wingStrokeWidth)
-      .line([leftWingStart, leftWingControl, leftWingEnd]);
+    // Adjusted third triangle (smaller and moved down to be part of the body)
+    const thirdTrianglePoints = [
+      this.position.$add(-0.3 * scale, 0.1 * scale),
+      this.position.$add(-0.8 * scale, 0.2 * scale),
+      this.position.$add(-0.8 * scale, 0.3 * scale),
+    ];
+    form.fillOnly(birdColor).polygon(thirdTrianglePoints);
 
-    const rightWingStart = this.position.$add(-0.2 * scale, 0);
-    const rightWingControl = this.position.$add(
-      -0.5 * scale,
-      (this.rightWingCurve + 0.2) * scale
-    );
-    const rightWingEnd = this.position.$add(
-      -0.8 * scale,
-      this.rightWingCurve * scale * 1.1
-    );
-    form
-      .strokeOnly(birdColor, wingStrokeWidth)
-      .line([rightWingStart, rightWingControl, rightWingEnd]);
+    // Left wing (side view, larger and flapping)
+    const leftWingPoints = [
+      this.position.$add(-0.2 * scale, 0),
+      this.position.$add(-1.2 * scale, this.leftWingCurve * scale),
+      this.position.$add(-0.2 * scale, 0.7 * scale),
+    ];
+    form.fillOnly(birdColor).polygon(leftWingPoints);
+
+    // Right wing (side view, larger and flapping)
+    const rightWingPoints = [
+      this.position.$add(-0.2 * scale, 0),
+      this.position.$add(1.2 * scale, this.rightWingCurve * scale),
+      this.position.$add(-0.2 * scale, 0.7 * scale),
+    ];
+    form.fillOnly(birdColor).polygon(rightWingPoints);
   }
 
   getRGBFromHex(hex) {
@@ -228,16 +226,6 @@ const PtsHome = ({ bgcolor = "transparent", resize = true, retina = true }) => {
       background={bgcolor}
       resize={resize}
       retina={retina}
-      // Ensure the canvas itself doesn't block underlying elements via CSS
-      style={{
-        position: "absolute", // Or 'fixed' depending on layout needs
-        top: 0,
-        left: 0,
-        zIndex: 1, // Adjust if needed relative to other absolute elements
-        pointerEvents: "none", // Allows clicks to pass through canvas to elements behind it
-        height: "100vh", // Example sizing
-        width: "100%", // Example sizing
-      }}
     />
   );
 };

@@ -14,7 +14,13 @@ export default function Section({
     return (
       <section className="w-full">
         <div className="border-t border-base-black/30 dark:border-base-200/20">
-          <div className={constrain ? "max-w-screen-lg mx-auto px-0" : "px-0"}>
+          <div
+            className={
+              constrain
+                ? "max-w-screen-lg mx-auto px-8 sm:px-4 md:px-4 lg:px-0"
+                : "px-8 sm:px-4 md:px-4 lg:px-0"
+            }
+          >
             <div className="max-w-screen-lg mx-auto">
               <h2 className="font-sans text-base mt-4 mb-8">{header}</h2>
             </div>
@@ -30,7 +36,7 @@ export default function Section({
     return (
       <section className="w-full">
         <div className="border-t border-base-black/30 dark:border-base-200/20">
-          <div className="max-w-screen-lg mx-auto">
+          <div className="max-w-screen-lg mx-auto px-8 sm:px-4 md:px-4 lg:px-0">
             <div className="sm:grid grid-cols-3 gap-6 mb-12 md:mb-4 sm:mb-0">
               {projectInfo.map((project, index) => (
                 <div key={index} className="flex flex-col col-span-1">
@@ -46,7 +52,9 @@ export default function Section({
           </div>
         </div>
         {constrain ? (
-          <div className="max-w-screen-lg mx-auto">{children}</div>
+          <div className="max-w-screen-lg mx-auto px-8 sm:px-4 md:px-4 lg:px-0">
+            {children}
+          </div>
         ) : (
           children
         )}
@@ -58,8 +66,8 @@ export default function Section({
   return (
     <section className="w-full">
       {constrain ? (
-        <div className="max-w-screen-lg mx-auto px-0">
-          <div className="border-t border-base-black/30 dark:border-base-200/20 mb-8 sm:mb-16">
+        <div className="max-w-screen-lg mx-auto px-8 sm:px-4 md:px-4 lg:px-0">
+          <div className="border-t border-base-black/30 dark:border-base-200/20 mb-8 sm:mb-16 ">
             <h2 className="font-sans text-base mt-4 mb-8">{header}</h2>
             <h3 className="font-serif text-3xl sm:text-4xl font-light tracking-normal mb-12 sm:leading-[1.24] text-pretty">
               {title}
@@ -68,8 +76,8 @@ export default function Section({
           </div>
         </div>
       ) : (
-        <div className="border-t border-base-black/30 dark:border-base-200/20 mb-8 sm:mb-16">
-          <div className="max-w-screen-lg px-0 mx-auto">
+        <div className="border-t border-base-black/30 dark:border-base-200/20 mb-8 sm:mb-16 ">
+          <div className="max-w-screen-lg mx-auto px-8 sm:px-4 md:px-4 lg:px-0">
             <h2 className="font-sans text-base mt-4 mb-8">{header}</h2>
             <h3 className="font-serif text-3xl sm:text-4xl font-light tracking-normal mb-12 sm:leading-[1.24] text-pretty">
               {title}
