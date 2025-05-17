@@ -23,7 +23,7 @@ export default function ProtectedContent({
   }
 
   return (
-    <div className="max-w-screen-lg mx-auto px-8 sm:px-4 md:px-4 lg:px-0">
+    <div className="max-w-screen-lg mx-auto w-full px-8 sm:px-8 md:px-8 xl:px-0">
       <section
         className="font-sans mb-20 flex-col border p-12 rounded-md border-yellow/30 dark:border-yellow/20 bg-gradient-to-br from-yellow/5 to-yellow/30 dark:from-base-900 dark:to-base-950"
         aria-labelledby="protected-title"

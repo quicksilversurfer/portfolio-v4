@@ -22,7 +22,7 @@ export default function Home() {
       />
       <Section
         header="work"
-        title="At AWS, I help build tools that empower businesses to manage their data with ease and efficiency."
+        title="At AWS, I work on simplifying developer tooling for complex database services, while also building tools that enhance how teams understand customer needs."
         constrain
       >
         <ProjectCard
@@ -38,8 +38,9 @@ export default function Home() {
           link="/aws"
         />
         <h3 className="font-serif text-3xl sm:text-4xl font-light tracking-normal mb-12 sm:leading-[1.24] text-pretty">
-          At Siemens Healthineers, I led the design of human-centered medical
-          devices and helped build a comprehensive design system.
+          At Siemens Healthineers, I improved medical device usability through
+          research while building a comprehensive design system and patterns
+          that scale across products.
         </h3>
         <ProjectCard
           title="Ultrasound"
@@ -105,43 +106,37 @@ export default function Home() {
               My journey began in India with Mechatronics engineering—a field
               that interweaves mechanical, electronic, and software systems.
               This foundation gave me an appreciation for how different elements
-              come together to create functional wholes. After working in IT and
-              experiencing how digital products evolve, I found myself drawn to
-              the human side of technology. This curiosity eventually led me to
-              Italy to study Interaction Design, formalizing what had been an
-              intuitive interest.
+              create functional wholes. After working in IT and seeing how
+              digital products evolve, I found myself drawn to the human side of
+              technology, which led me to study Interaction Design in Italy.
             </p>
             <p>
-              What continues to fascinate me about design is finding clarity
-              within complexity. Each domain—whether healthcare or cloud
-              computing—contains its own language, rituals, and mental models.
-              I'm drawn to these specialized worlds, uncovering how humans
-              navigate their environments and translate their expertise into
-              daily workflows. By immersing myself in these contexts, I can
-              distill complex knowledge into frameworks that reveal underlying
-              patterns. This exploration resembles learning a new language,
-              where each term, task, and interaction carries layers of
-              meaning—presenting opportunities for design to simplify and
-              enhance the experience.
+              What fascinates me about design is finding clarity within
+              complexity. Each domain contains its own language, rituals, and
+              mental models. I'm drawn to these specialized worlds, uncovering
+              how experts translate their knowledge into daily workflows. By
+              immersing myself in these contexts, I can distill complex
+              knowledge into frameworks that reveal underlying patterns—much
+              like learning a new language where each term carries layers of
+              meaning.
             </p>
             <p>
-              Through various research methods, I build an understanding of both
-              technical systems and human needs. The most rewarding moments come
-              when these perspectives align—when a complex capability becomes an
-              intuitive interaction. My work often involves creating artifacts
-              that make abstract concepts tangible, helping teams develop a
-              shared vocabulary and vision. These thinking tools become bridges
-              between different disciplines, enabling collaboration toward
-              clearer solutions.
+              The most rewarding moments come when technical systems and human
+              needs align—when complex capabilities become intuitive
+              interactions. My work often involves creating{" "}
+              <em>conceptual frameworks and working code</em> that make abstract
+              ideas tangible, helping teams develop shared understanding. These
+              thinking tools bridge different disciplines, enabling
+              collaborative exploration of complex problems.
             </p>
             <p>
-              I believe the most elegant design does the heavy lifting so users
-              don't have to. It reveals only what's necessary at each moment,
-              creating a sense of flow rather than friction. This principle
-              guides my approach across projects, whether reimagining medical
-              devices or simplifying cloud infrastructure. My aim is to create
-              spaces where complexity recedes into the background, and people
-              can focus on their actual goals rather than the tools themselves.
+              I believe elegant design does the heavy lifting so users don't
+              have to. It reveals only what's necessary, creating flow rather
+              than friction. This principle guides my approach whether improving
+              medical devices or simplifying developer tools. My aim is to craft
+              experiences where purpose steps forward and technology recedes,
+              allowing people to focus on their goals rather than the tools
+              themselves.
             </p>
           </div>
         </div>

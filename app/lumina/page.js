@@ -7,12 +7,13 @@ import Blockquote from "@/components/Blockquote";
 import ProjectCard from "@/components/ProjectCard";
 import SectionHighlight from "@/components/SectionHighlight";
 import ImgContainer from "@/components/ImgContainer";
-import Divider from "@/components/Divider";
 import ProtectedInput from "@/components/ProtectedInput";
 
 //images
 import ultrasoundCover from "@/public/images/ultrasound/ultrasound_home_cover.png";
 import shuiCover from "@/public/images/shui/shui_home_cover.png";
+import designBreakfastTitle from "@/public/images/aws/lumina/design_breakfast_title.png";
+import designBreakfastSlide from "@/public/images/aws/lumina/design_breakfast_slide.png";
 
 const luminaDetails = [
   {
@@ -122,6 +123,26 @@ export default function LuminaDetails() {
               to read feedback?" to "What are we learning from our customers?"
             </p>
           </Block>
+          <ImgContainer fullWidth>
+            <div className="col-span-6">
+              <Media
+                src={designBreakfastTitle}
+                alt="Lumina presentation slide showing the title of the project"
+              ></Media>
+            </div>
+            <div className="col-span-6">
+              <Media
+                src={designBreakfastSlide}
+                alt="Lumina presentation slide showing the importance of understanding customer feedback"
+              ></Media>
+            </div>
+            <span className="col-span-12 text-sm text-base-600 dark:text-base-500 font-sans text-left mt-2">
+              Presentation slides from a Design Breakfast session in 2025
+              showcasing Lumina's impact. I also presented this project at
+              Conflux 2025, an Amazon wide design conference, as part of the
+              Deep Dive into AI sessions.
+            </span>
+          </ImgContainer>
 
           <Blockquote>
             The heart of design is connecting humans to other humans. As

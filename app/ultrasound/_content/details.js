@@ -1289,13 +1289,14 @@ export default function UltrasoundDetails() {
           </span>
         </ImgContainer>
         <Blockquote>
-          There's no substitute for witnessing clinicians in their natural
-          environment. In one German hospital, I watched a cardiologist
-          seamlessly transition between three different systems while
-          maintaining a conversation with the patient—a moment that crystallized
-          our need to design for divided attention and multitasking. These
-          observed realities shaped our interface principles far more powerfully
-          than any assumption we might have made in isolation.
+          Direct observation reveals workflows that specifications alone cannot
+          capture. While researching in a German hospital, I watched a
+          cardiologist navigate between different systems throughout their
+          shift—switching contexts while maintaining patient relationships. This
+          highlighted the importance of consistent interfaces that minimize
+          cognitive burden during transitions. Field insights like these
+          consistently shaped our design decisions more effectively than
+          theoretical assumptions could.
         </Blockquote>
       </SectionHighlight>
       <SectionHighlight
@@ -1448,12 +1449,11 @@ export default function UltrasoundDetails() {
         </ImgContainer>
 
         <Blockquote>
-          Medical interfaces often swing between oversimplification that limits
-          capability and overwhelming complexity that hinders efficiency.
-          Finding the balance required more than aesthetic choices—it demanded
-          understanding the deep structure of cardiology workflows. What emerged
-          was carefully orchestrated system where every button, knob, and screen
-          element had earned its place through evidence rather than assumption.
+          Medical interfaces often struggle between oversimplification and
+          complexity. Finding the right balance required mapping actual
+          cardiology workflows in detail. The resulting design placed each
+          interface element deliberately, based on observed usage patterns
+          rather than assumptions.
         </Blockquote>
       </SectionHighlight>
       <SectionHighlight
@@ -1531,13 +1531,14 @@ export default function UltrasoundDetails() {
         </ImgContainer>
 
         <Blockquote>
-          This wasn't simply about moving buttons around—each function
-          represented years of clinical evolution and user expectation. When
-          redesigning the measurement tools, I spent three days with a senior
-          sonographer understanding exactly why certain functions were grouped
-          together in the legacy system. This attention to contextual details
-          made the difference between an interface that looked modern and one
-          that actually improved clinical work.
+          Interface redesign required understanding the reasoning behind
+          existing layouts. For measurement tools specifically, I worked
+          directly with an experienced sonographer to document the logic behind
+          the legacy system's organization. This research revealed functional
+          groupings based on clinical workflows that weren't immediately obvious
+          but proved essential to maintain. The difference between superficial
+          modernization and meaningful improvement hinged on these contextual
+          insights.
         </Blockquote>
 
         <Block title="Evolution through informed redesign">
@@ -1722,11 +1723,11 @@ export default function UltrasoundDetails() {
         </ImgContainer>
 
         <Blockquote>
-          When a sonographer told us they could move between our systems without
-          thinking about the interface, I knew we'd succeeded. The value wasn't
-          in visual consistency—it was in removing cognitive friction so
-          clinicians could focus entirely on their patients instead of the
-          technology.
+          A meaningful measure of success came when sonographers reported they
+          could transition between our systems without conscious adaptation. The
+          benefit went beyond visual consistency—it reduced cognitive load,
+          allowing clinicians to maintain focus on patients rather than
+          interface navigation.
         </Blockquote>
       </SectionHighlight>
       <SectionHighlight
@@ -1878,15 +1879,14 @@ export default function UltrasoundDetails() {
           </p>
         </Block>
         <Blockquote>
-          During one evaluation session, I watched a sonographer rapidly adapt
-          to our new interface despite having spent decades on the previous
-          system. When I asked about this, she replied, "You kept the parts that
-          matter and fixed the things that always frustrated me." This simple
-          observation highlighted what I believe is the essence of thoughtful
-          redesign—respecting the wisdom embedded in existing workflows while
-          finding opportunities to reduce friction and complexity. It's not
-          about technological novelty, but about understanding the deeper
-          patterns of how people work and making those patterns more fluid.
+          In an evaluation session, a sonographer with decades of experience on
+          the previous system adapted quickly to our new interface. When asked
+          why, she explained, "You kept the parts that matter and fixed the
+          things that always frustrated me." This feedback underscored an
+          important principle: effective redesign preserves valuable aspects of
+          existing workflows while addressing established pain points. The goal
+          isn't introducing novelty, but rather recognizing and improving the
+          functional patterns that shape daily work.
         </Blockquote>
       </SectionHighlight>
       <SectionHighlight

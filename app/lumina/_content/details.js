@@ -17,6 +17,8 @@ import luminaV2Architecture from "@/public/images/aws/lumina/luminav2-architectu
 import luminaV1Architecture from "@/public/images/aws/lumina/luminav1-architecture.png";
 import luminaProcess_1 from "@/public/images/aws/lumina/lumina-process-1.png";
 import luminaProcess_2 from "@/public/images/aws/lumina/lumina-process-2.png";
+import designBreakfastTitle from "@/public/images/aws/lumina/design_breakfast_title.png";
+import designBreakfastSlide from "@/public/images/aws/lumina/design_breakfast_slide.png";
 
 export default function ShuiDetails() {
   return (
@@ -615,6 +617,26 @@ export default function ShuiDetails() {
             AI integration throughout the organization.
           </p>
         </Block>
+        <ImgContainer fullWidth>
+          <div className="col-span-6">
+            <Media
+              src={designBreakfastTitle}
+              alt="Lumina presentation slide showing the title of the project"
+            ></Media>
+          </div>
+          <div className="col-span-6">
+            <Media
+              src={designBreakfastSlide}
+              alt="Lumina presentation slide showing the importance of understanding customer feedback"
+            ></Media>
+          </div>
+          <span className="col-span-12 text-sm text-base-600 dark:text-base-500 font-sans text-left mt-2">
+            Presentation slides from a Design Breakfast session in 2025
+            showcasing Lumina's impact. I also presented this project at Conflux
+            2025, an Amazon wide design conference, as part of the Deep Dive
+            into AI sessions.
+          </span>
+        </ImgContainer>
 
         <Block title="Broader applications">
           <p>

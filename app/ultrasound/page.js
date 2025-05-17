@@ -195,10 +195,10 @@ export default function Ultrasound() {
             </span>
           </ImgContainer>
           <Blockquote>
-            When designing medical devices, the stakes are uniquely high—these
-            are tools that professionals rely on to make critical decisions.
-            Finding clarity in this complexity means creating systems that fade
-            into the background, allowing healthcare providers to focus entirely
+            Medical devices serve as critical decision-making tools in
+            healthcare environments. The challenge lies in designing interfaces
+            that become intuitive enough to recede into the background, allowing
+            healthcare providers to maintain their focus where it matters most:
             on patient care.
           </Blockquote>
           <Block title="ACUSON Origin: Leading through research">
@@ -288,10 +288,11 @@ export default function Ultrasound() {
             </p>
           </Block>
           <Blockquote>
-            The most elegant design solutions don't draw attention to
-            themselves—they simply make complex tasks feel natural. Watching
-            sonographers intuitively use systems we designed, without requiring
-            instruction or explanation, was the true measure of our success.
+            Effective design becomes nearly invisible when done well—reducing
+            complexity without calling attention to itself. The most meaningful
+            validation came from observing sonographers confidently navigate our
+            systems without needing instruction, seamlessly integrating the
+            technology into their clinical workflows.
           </Blockquote>
         </SectionHighlight>
         <ProtectedInput />

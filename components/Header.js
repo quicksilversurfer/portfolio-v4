@@ -35,7 +35,7 @@ export default function Header() {
           : "bg-transparent dark:bg-transparent"
       )}
     >
-      <nav className="flex flex-row justify-between font-light font-sans max-w-screen-lg px-8 sm:px-4 md:px-4 lg:px-0 mx-auto w-full">
+      <nav className="flex flex-row justify-between font-light font-sans max-w-screen-lg mx-auto w-full px-8 sm:px-8 md:px-8 xl:px-0">
         <Link
           className={`link-style ${pathname === "/" ? "active" : ""}`}
           href="/"

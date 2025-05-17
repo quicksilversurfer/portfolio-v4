@@ -8,7 +8,7 @@ export default function SectionHighlight({
 }) {
   return (
     <section className="font-sans pb-12 flex-col">
-      <div className="max-w-screen-lg mx-auto px-8 sm:px-4 md:px-4 lg:px-0">
+      <div className="max-w-screen-lg mx-auto w-full px-8 sm:px-8 md:px-8 xl:px-0">
         <h3 className="pb-2 sm:pb-4 text-base text-base-600 dark:text-base-400 sm:font-light">
           {kicker}
         </h3>
